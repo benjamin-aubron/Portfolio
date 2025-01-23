@@ -6,5 +6,5 @@ export type Project = {
   date: string;
   techs: string[];
   url: string;
-  github: string;
+  github?: string;
 }
