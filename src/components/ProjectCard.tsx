@@ -6,13 +6,15 @@ import { Project } from "@/types/types";
 
 export default function ProjectCard({project}: {project: Project}) {
   return (
-    <div className="bg-neutral-800 text-neutral-200 p-4 rounded-xl">
+    <div className="bg-neutral-800 text-neutral-200 p-4 rounded-2xl">
       <div className="pb-2">
-        <img src="null" alt="" className="w-full h-40" />
+        <img src={`${project.src}`} alt={`${project.name}`} className="object-cover object-center w-full h-52 rounded-t-xl" />
       </div>
-      <h3 className="text-xl font-semibold text-neutral-100">{project.name}</h3>
-      <div className="text-neutral-300">{project.date}</div>
-      <div className="pb-1 text-neutral-400">{project.description}</div>
+      <h3 className="text-xl font-semibold text-neutral-100 py-1">{project.name}</h3>
+      <div className="text-neutral-300 py-3">{project.date}</div>
+      <div className="pb-1 h-32 text-neutral-40">
+        <div className="line-clamp-5">{project.description}</div>
+      </div>
       <hr className="border-neutral-500" />
       <div className="flex flex-wrap gap-2 py-2">
         {project.techs.map((tech, index) => (

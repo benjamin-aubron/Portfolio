@@ -1,7 +1,9 @@
 import Nav from "@/components/Nav"
 import CTA from "@/components/CTA"
 import ProjectCard from "@/components/ProjectCard"
+import ExperienceCard from "@/components/ExperienceCard"
 import { projects } from "@/db/projects"
+import { experiences } from "@/db/experiences"
 
 export default function HomePage() {
   return (
@@ -10,14 +12,22 @@ export default function HomePage() {
       <CTA />
 
       <section className="bg-black max-w-screen-xl mx-auto px-4 py-20 text-neutral-100">
-        <h2 className="text-4xl text-neutral-100 font-semibold pb-4">My last projects</h2>
-        <div className="grid grid-cols-3 gap-4">
+        <h2 className="text-4xl text-neutral-100 font-semibold pb-6">My last projects</h2>
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
           {projects.map((project, index) => (
             <ProjectCard key={index} project={project} />
           ))}
         </div>
-        <div className="flex justify-center text-center text-[--primaryColor] text-xl mt-10">See more projects</div>
+        {/* <div className="flex justify-center text-center text-[--primaryColor] text-xl mt-10">See more projects</div> */}
       </section>
+
+      <section className="bg-black max-w-screen-xl mx-auto px-4 py-20 text-neutral-100">
+        <h2 className="text-4xl text-neutral-100 font-semibold pb-6">Timelime</h2>
+        {experiences.map((experience, index) => (
+          <ExperienceCard key={index} experience={experience} />
+        ))}
+      </section>
+
     </div>
   )
 }
