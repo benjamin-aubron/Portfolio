@@ -14,6 +14,7 @@ export type Experience = {
   entity: string;
   position: string;
   place:string;
+  activity: string;
   startDate: string;
   endDate?: string;
   duration: string;

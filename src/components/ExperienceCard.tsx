@@ -1,11 +1,16 @@
 import { Experience } from "@/types/types";
+import { IoIosRocket } from "react-icons/io";
+import { PiStudentFill } from "react-icons/pi";
+import { MdWork } from "react-icons/md";
 
 export default function ExperienceCard({experience}: {experience: Experience}) {
   return (
     <div className="pb-2">
       <div className="flex items-center justify-start pb-2">
-        <div className="w-10 h-10 rounded-full bg-red-500">
-          
+        <div className="flex items-center justify-center w-10 h-10 rounded-full bg-red-500">
+          {experience.activity === "job" && <MdWork className="text-2xl" />}
+          {experience.activity === "entrepreneurship" && <IoIosRocket className="text-2xl" />}
+          {experience.activity === "study" && <PiStudentFill className="text-2xl" />}
         </div>
         <div className="ml-3">{experience.position}{experience.entity && " - "}{experience.entity}</div>
       </div>
