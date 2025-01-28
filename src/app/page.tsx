@@ -21,12 +21,13 @@ export default function HomePage() {
         {/* <div className="flex justify-center text-center text-[--primaryColor] text-xl mt-10">See more projects</div> */}
       </section>
 
-      <section className="bg-black max-w-screen-xl mx-auto px-4 py-20 text-neutral-100">
+      <section className="bg-black max-w-screen-lg mx-auto px-4 py-20 text-neutral-100">
         <h2 className="text-4xl text-neutral-100 font-semibold pb-6">Timelime</h2>
         {experiences.map((experience, index) => (
           <ExperienceCard key={index} experience={experience} />
         ))}
       </section>
+
 
     </div>
   )
