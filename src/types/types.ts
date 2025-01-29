@@ -1,3 +1,4 @@
+import React from "react";
 
 
 export type Project = {
@@ -18,6 +19,6 @@ export type Experience = {
   startDate: string;
   endDate?: string;
   duration: string;
-  description: string;
+  description: string | React.ReactNode;
   skills?: string[];
 }

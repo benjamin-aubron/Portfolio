@@ -31,7 +31,7 @@ export const experiences: Experience[] = [
     endDate: "2022",
     duration: "1 an",
     description: "Formation diplômante “Data Science with R” d’HarvardX. Data Science avec Python en machine learning et deep learning (Keras et TensorFlow). Création d’un logiciel d’achat vente d’actif numérique avec effet levier et stratégies optimisées par IA. Optimisation de portefeuille selon les concepts de Markovitz",
-    skills: ["Python", "Django", "PostgreSQL", "Docker", "Kubernetes", "AWS"],
+    skills: ["Python", "R", "Machine-learning", "Deep-learning", "Keras", "Tensorflow", "Scikit-learn"],
   },
   {
     entity: "Manufacture Cartier",
@@ -41,8 +41,15 @@ export const experiences: Experience[] = [
     startDate: "2018",
     endDate: "2020",
     duration: "2 ans",
-    description: "Chargé de missions logistique : Refonte des flux de production de la ligne Or, flux tiré vs flux poussé, gestion des stocks, organisation de production et suivi d’efficience. Création d’indicateurs pour le pilotage de production. Responsabilité du portefeuille de projets de la manufacture. Ordonnancement des métiers d’usinage, polissage et assemblage pour la ligne Or de la manufacture. Ordonnanceur : Gestion des stocks des produits semi-finis pour assurer la production des montres. Création de KPI pour assurer le suivi des quantités de lancements sur les nouveautés.",
-    skills: ["Python", "Django", "PostgreSQL", "Docker", "Kubernetes", "AWS"],
+    description: (
+      <div>
+        <h3 className="text-xl pb-1">Chargé de missions logistique :</h3>
+        <p className="pb-2"> Refonte des flux de production de la ligne Or, flux tiré vs flux poussé, gestion des stocks, organisation de production et suivi d’efficience. Création d’indicateurs pour le pilotage de production. Responsabilité du portefeuille de projets de la manufacture.</p>
+        <h3 className="text-xl pb-1">Ordonnanceur :</h3>
+        <p>Ordonnancement des métiers d’usinage, polissage et assemblage pour la ligne Or de la manufacture. Gestion des stocks des produits semi-finis pour assurer la production des montres. Création de KPI pour assurer le suivi des quantités de lancements sur les nouveautés.</p>
+      </div>
+    ),
+    skills: ["Ordonnancement", "Gestion de stocks", "KPI", "PM Office", "Production", "Logistique"],
   },
   {
     entity: "Chaumet",
@@ -75,10 +82,10 @@ export const experiences: Experience[] = [
     endDate: "2017",
     duration: "6 mois",
     description: "",
-    skills: ["Python"],
+    skills: ["Business model", "Innovation", "Entrepreneuriat"],
   },
   {
-    entity: "Microsoft",
+    entity: "UTBM",
     position: "Diplôme d’ingénieur en Logistique industrielle",
     place: "Belfot, France",
     activity: "study",
@@ -86,7 +93,6 @@ export const experiences: Experience[] = [
     endDate: "2018",
     duration: "4 ans",
     description: "",
-    skills: ["Django"],
   },
 
 ]
