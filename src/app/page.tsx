@@ -2,8 +2,10 @@ import Nav from "@/components/Nav"
 import CTA from "@/components/CTA"
 import ProjectCard from "@/components/ProjectCard"
 import ExperienceCard from "@/components/ExperienceCard"
+import SkillsTabs from "@/components/SkillsTabs"
 import { projects } from "@/db/projects"
 import { experiences } from "@/db/experiences"
+
 
 export default function HomePage() {
   return (
@@ -21,8 +23,9 @@ export default function HomePage() {
         {/* <div className="flex justify-center text-center text-[--primaryColor] text-xl mt-10">See more projects</div> */}
       </section>
 
-      <section>
-
+      <section id="skills" className="bg-black max-w-screen-lg mx-auto px-4 py-20 text-neutral-100">
+        <h2 className="text-4xl text-neutral-100 font-semibold pb-6">Mes compétences</h2>
+        <SkillsTabs />
       </section>
 
       <section id="experiences" className="bg-black max-w-screen-lg mx-auto px-4 py-20 text-neutral-100">
