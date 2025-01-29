@@ -12,8 +12,8 @@ body {
 @layer base {
   :root {
     --primaryColor: #3CCF91;
-    --secondaryColor: #3CCF91;
-    --tertiaryColor: #3CCF91;
+    --secondaryColor: #8ed4b7;
+    --tertiaryColor: #b4ebd4;
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
     --card: 0 0% 100%;
@@ -42,7 +42,7 @@ body {
   }
   .dark {
     --primaryColorDark: #3CCF91;
-    --secondaryColorDark: #3CCF91;
+    --secondaryColorDark: #8ed4b7;
     --tertiaryColorDark: #3CCF91;
     --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;

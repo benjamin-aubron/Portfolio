@@ -22,11 +22,11 @@ export default function HomePage() {
       </section>
 
       <section>
-        
+
       </section>
 
       <section id="experiences" className="bg-black max-w-screen-lg mx-auto px-4 py-20 text-neutral-100">
-        <h2 className="text-4xl text-neutral-100 font-semibold pb-6">Timelime</h2>
+        <h2 className="text-4xl text-neutral-100 font-semibold pb-6">Chronologie</h2>
         {experiences.map((experience, index) => (
           <ExperienceCard key={index} experience={experience} />
         ))}
