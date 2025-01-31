@@ -23,7 +23,7 @@ export default function HomePage() {
         {/* <div className="flex justify-center text-center text-[--primaryColor] text-xl mt-10">See more projects</div> */}
       </section>
 
-      <section id="skills" className="bg-black max-w-screen-lg mx-auto px-4 py-20 text-neutral-100">
+      <section id="skills" className="bg-black max-w-screen-lg mx-auto px-4 py-20 text-neutral-100 h-[500px]">
         <h2 className="text-4xl text-neutral-100 font-semibold pb-6">Mes compétences</h2>
         <SkillsTabs />
       </section>
