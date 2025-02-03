@@ -3,6 +3,7 @@ import CTA from "@/components/CTA"
 import ProjectCard from "@/components/ProjectCard"
 import ExperienceCard from "@/components/ExperienceCard"
 import SkillsTabs from "@/components/SkillsTabs"
+import StackCard from "@/components/StackCard"
 import { projects } from "@/db/projects"
 import { experiences } from "@/db/experiences"
 
@@ -26,6 +27,24 @@ export default function HomePage() {
       <section id="skills" className="bg-black max-w-screen-lg mx-auto px-4 py-20 text-neutral-100 h-[500px]">
         <h2 className="text-4xl text-neutral-100 font-semibold pb-6">Mes compétences</h2>
         <SkillsTabs />
+      </section>
+
+      <section id="skills" className="bg-black max-w-screen-lg mx-auto px-4 py-20 text-neutral-100 h-[500px]">
+        <h2 className="text-4xl text-neutral-100 font-semibold pb-6">Ma stack favorite</h2>
+        <div className="grid grid-cols-3 gap-6">
+          <div className="col-span-2">
+            <StackCard name="Next">Framework react moderne, Next offre des performances optimisées et un rendu rapide grâce au server-side rendering (SSR) et au static site generation (SSG).</StackCard>
+          </div>
+          <div className="col-span-1">
+            <StackCard name="Tailwind">Pour le design, Tailwind offre le meilleur compromis entre simplicité, rapidité et performances</StackCard>
+          </div>
+          <div className="col-span-1">
+            <StackCard name="Typescript">Création d'un code robuste grâce au typage statique, tout en facilitant la maintenance.</StackCard>
+          </div>
+          <div className="col-span-2">
+            <StackCard name="NextAuth x Prisma">Flexible et facile à intégrer, la combination de NextAuth et Prisma permet de facilement gérer l'authentification.</StackCard> 
+          </div>
+        </div>
       </section>
 
       <section id="experiences" className="bg-black max-w-screen-lg mx-auto px-4 py-20 text-neutral-100">
