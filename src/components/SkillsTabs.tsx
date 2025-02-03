@@ -16,7 +16,7 @@ export default function SkillsTabs() {
       </div> 
       <hr className="my-2"/>
       <div className={`flex items-center justify-around ${engineeringSkills ? "delay-300 duration-300 opacity-100" : "duration-300 opacity-0"}`}>
-        <div>
+        <div className="space-y-2">
           <h4 className="pt-2 pb-1 text-neutral-500 font-semibold text-sm">Web</h4>
           <ul className="text-lg space-y-2">
             <li className="flex items-center space-x-2 px-3 py-1 bg-[#242938] text-[#00d8ff] border-[1px] border-[#00d8ff]/40 rounded-full">
@@ -40,7 +40,7 @@ export default function SkillsTabs() {
             </li>
           </ul>
         </div>
-        <div>
+        <div className="space-y-2">
           <h4 className="pt-2 pb-1 text-neutral-500 font-semibold text-sm">Data Science</h4>
           <ul className="text-lg space-y-2">
             <li className="flex items-center space-x-2 px-3 py-1 bg-[#ffc331]/10 text-[#ffc331] border-[1px] border-[#ffc331]/50 rounded-full">
@@ -64,7 +64,7 @@ export default function SkillsTabs() {
             </li>
           </ul>
         </div>
-        <div>
+        <div className="space-y-2">
           <h4 className="pt-2 pb-1 text-neutral-500 font-semibold text-sm">Logistique</h4>
           <ul className="text-lg space-y-2">
             <li className="flex items-center space-x-2 px-3 py-1 bg-[#242938] text-neutral-200 border-[1px] border-neutral-200/50 rounded-full">
@@ -90,21 +90,37 @@ export default function SkillsTabs() {
           </ul>
         </div>
       </div>
-      <div className={`relative -top-[168px] flex items-center justify-around ${engineeringSkills ? "duration-300 opacity-0" : "delay-300 duration-300 opacity-100"}`}>
-        <div>
-        <h4 className="pt-2 pb-1 text-neutral-500 font-semibold text-sm">Autres</h4>
-        <ul className="text-lg">
-            <li className="flex">Parler en publique</li>
-            <li className="flex">Figma</li>
-            <li className="flex">Notion d'UI/UX</li>
+      <div className={`relative -top-[252px] flex items-center justify-around ${engineeringSkills ? "duration-300 opacity-0" : "delay-300 duration-300 opacity-100"}`}>
+        <div className="space-y-2">
+          <h4 className="pt-2 pb-1 text-neutral-500 font-semibold text-sm">Autres</h4>
+          <ul className="text-lg space-y-2">
+            <li className="flex items-center space-x-2 px-3 py-1 bg-[#242938] text-neutral-300 border-[1px] border-neutral-300/50 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 512 512"><path fill="currentColor" d="M256 33c-20.835 0-39 20.24-39 47s18.165 47 39 47s39-20.24 39-47s-18.165-47-39-47M110.258 54.934l-16.99 8.496c14.917 22.147 32.213 47.013 49.76 68.947c19.707 24.634 39.95 45.048 52.997 51.572l4.975 2.488v39.478c27.13 3.608 46.516 4.982 67.875 4.09c-.66-.49-1.316-.98-1.95-1.48c-4.915-3.88-9.18-8.206-12.5-12.856c-5.87-.587-10.577-4.374-13.392-8.65c-3.063-4.65-4.57-10.242-4.57-16.262s1.507-11.612 4.57-16.264c3.064-4.65 8.364-8.736 14.967-8.736s11.903 4.085 14.967 8.736s4.57 10.244 4.57 16.264s-1.507 11.612-4.57 16.263c-.06.094-.13.185-.192.277c1.92 2.358 4.335 4.758 7.303 7.1c6.283 4.962 14.722 9.46 24.75 12.66c2.65-.324 5.366-.67 8.172-1.04v-39.58l4.975-2.488c13.048-6.525 33.29-26.94 52.998-51.573c17.546-21.934 34.842-46.8 49.76-68.947l-16.99-8.496C355.066 101.422 307.792 145 256 145s-99.067-43.578-145.742-90.066m29.094 179.93l12.152 60.763c101.057 9.362 107.935 9.362 208.992 0l12.147-60.734c-110.08 17.448-123.22 17.163-233.29-.03zm39.244 81.335l13.35 106.8h128.11l13.348-106.8c-67.76 6.032-87.047 6.032-154.808 0M137 441v20h238v-20zM16 478v18h480v-18z"></path></svg>
+              <span>Parler en publique</span></li>
+            <li className="flex items-center space-x-2 px-3 py-1 bg-[#242938] text-neutral-300 border-[1px] border-neutral-300/50 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 256 256"><g fill="none"><rect width={256} height={256} fill="#242938" rx={60}></rect><g clipPath="url(#skillIconsFigmaDark0)"><path fill="#0acf83" d="M94.347 228c18.4 0 33.333-14.933 33.333-33.333v-33.334H94.347c-18.4 0-33.334 14.934-33.334 33.334S75.947 228 94.347 228"></path><path fill="#a259ff" d="M61.013 128c0-18.4 14.934-33.333 33.334-33.333h33.333v66.666H94.347c-18.4 0-33.334-14.933-33.334-33.333"></path><path fill="#f24e1e" d="M61.013 61.333C61.013 42.933 75.947 28 94.347 28h33.333v66.667H94.347c-18.4 0-33.334-14.934-33.334-33.334"></path><path fill="#ff7262" d="M127.68 28h33.333c18.4 0 33.334 14.933 33.334 33.333s-14.934 33.334-33.334 33.334H127.68z"></path><path fill="#1abcfe" d="M194.347 128c0 18.4-14.934 33.333-33.334 33.333S127.68 146.4 127.68 128s14.933-33.333 33.333-33.333S194.347 109.6 194.347 128"></path></g><defs><clipPath id="skillIconsFigmaDark0"><path fill="#fff" d="M61 28h133.36v200H61z"></path></clipPath></defs></g></svg>
+              <span>Figma</span></li>
+            <li className="flex items-center space-x-2 px-3 py-1 bg-[#242938] text-neutral-300 border-[1px] border-neutral-300/50 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 32 32"><path fill="currentColor" d="M7.75 2.977a1 1 0 0 0-1.638-.747C4.393 3.657 3.35 4.837 2.744 5.94C2.12 7.077 2.001 8.064 2.001 9a4 4 0 0 0 8 0c0-1.28-.626-2.23-1.116-2.974l-.144-.22c-.52-.806-.962-1.59-.99-2.829m-5.749 14.03c0-1.116.088-2.528.584-3.696A5.48 5.48 0 0 0 6.001 14.5c1.292 0 2.48-.446 3.418-1.191c.495 1.17.582 2.582.582 3.697c0 1.844-.288 4.908-.815 7.523c-.263 1.303-.595 2.55-1.006 3.494c-.203.468-.45.919-.76 1.269c-.304.344-.777.708-1.416.708c-.64 0-1.113-.364-1.417-.708c-.309-.35-.556-.8-.76-1.269c-.411-.943-.745-2.19-1.008-3.494c-.528-2.614-.818-5.679-.818-7.523M10.986 6.68A7 7 0 0 1 20.929 12H17.5a4.5 4.5 0 0 0-4.5 4.5v3.43a7 7 0 0 1-1.613-.434a49 49 0 0 1-.209 2.053a9 9 0 0 0 1.822.396V24.5a4.5 4.5 0 0 0 4.5 4.5h8a4.5 4.5 0 0 0 4.5-4.5v-8a4.5 4.5 0 0 0-4.5-4.5h-2.555A9 9 0 0 0 9.973 4.95l.027.042l.136.205c.236.353.57.855.85 1.483M25.5 14a2.5 2.5 0 0 1 2.5 2.5v8a2.5 2.5 0 0 1-2.5 2.5h-8a2.5 2.5 0 0 1-2.5-2.5v-2.555A9.004 9.004 0 0 0 22.945 14zM15 19.93V16.5a2.5 2.5 0 0 1 2.5-2.5h3.43A7 7 0 0 1 15 19.93"></path></svg>
+              <span>Notion d'UI/UX</span>
+            </li>
           </ul>
         </div>
-        <div>
-        <h4 className="pt-2 pb-1 text-neutral-500 font-semibold text-sm">Langues</h4>
-        <ul className="text-lg">
-            <li className="flex">Français - <span className="text-neutral-400 ml-1">langue maternelle</span></li>
-            <li className="flex">Anglais - <span className="text-neutral-400 ml-1">compétences professionnelles</span></li>
-            <li className="flex">Mandarin - <span className="text-neutral-400 ml-1">notions</span></li>
+        <div className="space-y-2">
+          <h4 className="pt-2 pb-1 text-neutral-500 font-semibold text-sm">Langues</h4>
+          <ul className="text-lg space-y-2">
+            <li className="flex items-center space-x-2 px-3 py-1 bg-[#242938] text-neutral-300 border-[1px] border-neutral-300/50 rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 36 36"><path fill="#ed2939" d="M36 27a4 4 0 0 1-4 4h-8V5h8a4 4 0 0 1 4 4z"></path><path fill="#002495" d="M4 5a4 4 0 0 0-4 4v18a4 4 0 0 0 4 4h8V5z"></path><path fill="#eee" d="M12 5h12v26H12z"></path></svg>
+              <span>Français - <span className="text-neutral-400 ml-1">langue maternelle</span></span>
+            </li>
+            <li className="flex items-center space-x-2 px-3 py-1 bg-[#242938] text-neutral-300 border-[1px] border-neutral-300/50 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 36 36"><path fill="#00247d" d="M0 9.059V13h5.628zM4.664 31H13v-5.837zM23 25.164V31h8.335zM0 23v3.941L5.63 23zM31.337 5H23v5.837zM36 26.942V23h-5.631zM36 13V9.059L30.371 13zM13 5H4.664L13 10.837z"></path><path fill="#cf1b2b" d="m25.14 23l9.712 6.801a4 4 0 0 0 .99-1.749L28.627 23zM13 23h-2.141l-9.711 6.8c.521.53 1.189.909 1.938 1.085L13 23.943zm10-10h2.141l9.711-6.8a4 4 0 0 0-1.937-1.085L23 12.057zm-12.141 0L1.148 6.2a4 4 0 0 0-.991 1.749L7.372 13z"></path><path fill="#eee" d="M36 21H21v10h2v-5.836L31.335 31H32a4 4 0 0 0 2.852-1.199L25.14 23h3.487l7.215 5.052c.093-.337.158-.686.158-1.052v-.058L30.369 23H36zM0 21v2h5.63L0 26.941V27c0 1.091.439 2.078 1.148 2.8l9.711-6.8H13v.943l-9.914 6.941c.294.07.598.116.914.116h.664L13 25.163V31h2V21zM36 9a3.98 3.98 0 0 0-1.148-2.8L25.141 13H23v-.943l9.915-6.942A4 4 0 0 0 32 5h-.663L23 10.837V5h-2v10h15v-2h-5.629L36 9.059zM13 5v5.837L4.664 5H4a4 4 0 0 0-2.852 1.2l9.711 6.8H7.372L.157 7.949A4 4 0 0 0 0 9v.059L5.628 13H0v2h15V5z"></path><path fill="#cf1b2b" d="M21 15V5h-6v10H0v6h15v10h6V21h15v-6z"></path></svg>
+              <span>Anglais - <span className="text-neutral-400 ml-1">compétences professionnelles</span></span>
+            </li>
+            <li className="flex items-center space-x-2 px-3 py-1 bg-[#242938] text-neutral-300 border-[1px] border-neutral-300/50 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 36 36"><path fill="#de2910" d="M36 27a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V9a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4z"></path><path fill="#ffde02" d="m11.136 8.977l.736.356l.589-.566l-.111.81l.72.386l-.804.144l-.144.804l-.386-.72l-.81.111l.566-.589zm4.665 2.941l-.356.735l.566.59l-.809-.112l-.386.721l-.144-.805l-.805-.144l.721-.386l-.112-.809l.59.566zm-.957 3.779l.268.772l.817.017l-.651.493l.237.783l-.671-.467l-.671.467l.236-.783l-.651-.493l.817-.017zm-3.708 3.28l.736.356l.589-.566l-.111.81l.72.386l-.804.144l-.144.804l-.386-.72l-.81.111l.566-.589zM7 10.951l.929 2.671l2.826.058l-2.253 1.708l.819 2.706L7 16.479l-2.321 1.615l.819-2.706l-2.253-1.708l2.826-.058z"></path></svg>
+              <span>Mandarin - <span className="text-neutral-400 ml-1">notions</span></span>
+            </li>
           </ul>
         </div>
       </div>
