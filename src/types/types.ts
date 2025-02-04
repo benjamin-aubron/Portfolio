@@ -22,3 +22,9 @@ export type Experience = {
   description: string | React.ReactNode;
   skills?: string[];
 }
+
+export type Stack = {
+  name: string;
+  description: string;
+  icon: React.ReactNode;
+}
