@@ -9,8 +9,11 @@ export default function Nav() {
         <span className='text-[#8F9094]'> &#125;</span>
       </div>
       <div className='flex items-center gap-4'>
-        <div>Home</div>
-        <div>Projects</div>
+        <div>Projets</div>
+        <div>Compétences</div>
+        <div>Stack favorite</div>
+        <div>Chronologie</div>
+        <div>A propos</div>
       </div>
     </div>
   )
