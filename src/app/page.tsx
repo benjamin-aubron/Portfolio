@@ -13,9 +13,9 @@ export default function HomePage() {
   return (
     <div className="bg-black h-full">
       <Nav />
-      <CTA />
+      <CTA/>
 
-      <section id="project" className="bg-black max-w-screen-xl mx-auto px-4 py-20 text-neutral-100">
+      <section id="project" className="bg-black max-w-screen-xl mx-auto px-4 py-40 text-neutral-100">
         <h2 className="text-4xl text-neutral-100 font-semibold pb-6">My last projects</h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
           {projects.map((project, index) => (
@@ -25,12 +25,12 @@ export default function HomePage() {
         {/* <div className="flex justify-center text-center text-[--primaryColor] text-xl mt-10">See more projects</div> */}
       </section>
 
-      <section id="skills" className="bg-black max-w-screen-lg mx-auto px-4 py-20 text-neutral-100 h-[500px]">
+      <section id="skills" className="bg-black max-w-screen-lg mx-auto px-4 py-32 text-neutral-100 max-h-[650px]">
         <h2 className="text-4xl text-neutral-100 font-semibold pb-6">Mes compétences</h2>
         <SkillsTabs />
       </section>
 
-      <section id="stack" className="bg-black max-w-screen-lg mx-auto px-4 py-20 text-neutral-100">
+      <section id="stack" className="bg-black max-w-screen-lg mx-auto px-4 py-32 text-neutral-100">
         <h2 className="text-4xl text-neutral-100 font-semibold pb-6">Ma stack favorite</h2>
         <div className="grid grid-cols-2 xl:grid-cols-3 gap-6">
           <div className="col-span-2">
@@ -48,11 +48,16 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="experiences" className="bg-black max-w-screen-lg mx-auto px-4 py-20 text-neutral-100">
+      <section id="experiences" className="bg-black max-w-screen-lg mx-auto px-4 py-32 text-neutral-100">
         <h2 className="text-4xl text-neutral-100 font-semibold pb-6">Chronologie</h2>
         {experiences.map((experience, index) => (
           <ExperienceCard key={index} experience={experience} />
         ))}
+      </section>
+
+      <section id="about" className="bg-black max-w-screen-lg mx-auto px-4 pt-32 pb-80 text-neutral-100">
+      <h2 className="text-4xl text-neutral-100 font-semibold pb-6">A propos</h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam rem reiciendis consectetur saepe officiis animi aspernatur, ipsa nihil illo pariatur laudantium. Quis soluta quo, natus deleniti quasi amet officia eaque?
       </section>
 
 

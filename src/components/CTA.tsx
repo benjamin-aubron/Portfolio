@@ -5,7 +5,7 @@ import { PiReadCvLogoFill } from "react-icons/pi";
 
 export default function CTA() {
   return (
-    <div className='relative max-w-screen-xl mx-auto px-4'>
+    <div className='relative max-w-screen-xl mx-auto px-4 h-screen'>
       <div>
         <div className='text-[--primaryColorDark] text-lg md:text-4xl font-semibold mt-20'>Hey there 👋 ! I'm</div>
         <h1 className='text-neutral-100 font-extrabold text-5xl md:text-7xl py-4 lg:py-10'>Benjamin AUBRON</h1>
