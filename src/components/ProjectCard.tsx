@@ -6,7 +6,7 @@ import { Project } from "@/types/types";
 
 export default function ProjectCard({project}: {project: Project}) {
   return (
-    <div className="relative bg-neutral-900 text-neutral-200 p-4 rounded-2xl group border border-neutral-800 hover:border-[--secondaryColor] duration-300">
+    <div className="relative bg-neutral-900 text-neutral-200 p-4 rounded-2xl group border border-neutral-900 hover:border-[--secondaryColor] duration-300">
       <div className="pb-2">
         <img src={`${project.src}`} alt={`${project.name}`} className="object-cover object-center w-full h-52 rounded-t-xl saturate-50 group-hover:saturate-100 transition-all duration-300" />
       </div>

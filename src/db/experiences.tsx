@@ -43,9 +43,9 @@ export const experiences: Experience[] = [
     duration: "2 ans",
     description: (
       <div>
-        <h3 className="text-xl pb-1">Chargé de missions logistique :</h3>
-        <p className="pb-2"> Refonte des flux de production de la ligne Or, flux tiré vs flux poussé, gestion des stocks, organisation de production et suivi d’efficience. Création d’indicateurs pour le pilotage de production. Responsabilité du portefeuille de projets de la manufacture.</p>
-        <h3 className="text-xl pb-1">Ordonnanceur :</h3>
+        <h3 className="text-xl pb-1 text-neutral-100">Chargé de missions logistique :</h3>
+        <p> Refonte des flux de production de la ligne Or, flux tiré vs flux poussé, gestion des stocks, organisation de production et suivi d’efficience. Création d’indicateurs pour le pilotage de production. Responsabilité du portefeuille de projets de la manufacture.</p>
+        <h3 className="text-xl pt-4 pb-1 text-neutral-100">Ordonnanceur :</h3>
         <p>Ordonnancement des métiers d’usinage, polissage et assemblage pour la ligne Or de la manufacture. Gestion des stocks des produits semi-finis pour assurer la production des montres. Création de KPI pour assurer le suivi des quantités de lancements sur les nouveautés.</p>
       </div>
     ),
@@ -59,8 +59,8 @@ export const experiences: Experience[] = [
     startDate: "2018",
     endDate: "2018",
     duration: "6 mois",
-    description: "Calcul des lead time et simulation des coûts de transports entre la France et les clients en Asie, incluant les coûts de douanes en fonction des produits.",
-    skills: ["Python,", "Django,", "PostgreSQL,", "Docker,", "Kubernetes,", "AWS"],
+    description: "Calcul des leadtime et simulation des coûts de transports entre la France et les clients en Asie Pacifique, incluant les coûts de douanes en fonction des produits (normes CITES).",
+    skills: ["Gestion de projet,", "5S,","VBA,","SAP,","règlementations douanières pour les produits de luxe"],
   },
   {
     entity: "UTBM",
@@ -78,7 +78,6 @@ export const experiences: Experience[] = [
     place: "Shanghai, Chine",
     activity: "study",
     startDate: "2017",
-    endDate: "2017",
     duration: "6 mois",
     description: "",
   },

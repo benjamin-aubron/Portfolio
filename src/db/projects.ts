@@ -22,7 +22,7 @@ export const projects: Project[] = [
   {
     name: "TheCryptoGalaxy",
     src:"theCryptoGalaxy.png",
-    description: "TheCryptoGalaxy est un site destiné à des personnes intéressées par les crypto actifs qui ont déjà un bon niveau de connaissance dans ce domaine. Ce site rassemble à un endroit les meilleurs outils et Dapp des écosystèmes les plus développés.",
+    description: "TheCryptoGalaxy est un site rassemblant à un seul endroit les meilleurs outils et Dapp des écosystèmes blockchain les plus développés.",
     date: "2023 → Today",
     techs: ["React", "Next.js", "TailwindCSS", "TypeScript", "MagicUI"],
     url: "https://github.com/Benjamin-AUBRON/portfolio",

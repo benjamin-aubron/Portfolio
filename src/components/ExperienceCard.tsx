@@ -17,10 +17,10 @@ export default function ExperienceCard({experience}: {experience: Experience}) {
       <div className="flex items-center justify-start pb-2">
         <div className="min-w-[2px] mx-[18px] bg-[--secondaryColor] self-stretch rounded"></div>        
         <div className="ml-3">
-          <div className="text-neutral-400">{experience.startDate}{experience.endDate && " - "}{experience.endDate} - {experience.duration} - {experience.place}</div>
-          <div className="py-1 text-neutral-200">{experience.description}</div>
+          <div className="text-neutral-500">{experience.startDate}{experience.endDate && " - "}{experience.endDate} - {experience.duration} - {experience.place}</div>
+          <div className="py-1 text-neutral-300">{experience.description}</div>
           <div className="flex space-x-1 py-2 items-center">
-            {experience.skills && <div>Compétences : </div>}
+            {experience.skills && <div className="text-neutral-300">Compétences : </div>}
             {experience.skills?.map((skill, index) => <div className="text-[--tertiaryColor]" key={index}>{skill}</div>)}
           </div>
         </div>
