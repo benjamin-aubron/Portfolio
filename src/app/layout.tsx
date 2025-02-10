@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Benjamin AUBRON | Portfolio",
-  description: "This Benjamin AUBRON portfolio. A showcase of his skills and experiences.",
+  description: "This is Benjamin AUBRON portfolio. A showcase of his skills and experiences.",
 };
 
 export default function RootLayout({
