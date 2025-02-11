@@ -32,7 +32,7 @@ export default function HomePage() {
 
       <section id="stack" className="bg-black max-w-screen-lg mx-auto px-4 py-32 text-neutral-100">
         <h2 className="text-4xl text-neutral-100 font-semibold pb-6">Ma stack favorite</h2>
-        <div className="grid grid-cols-2 xl:grid-cols-3 gap-6">
+        <div className="grid grid-cols-2 xl:grid-cols-3 gap-3 md:gap-6">
           <div className="col-span-2">
             <StackCard stack={stack[0]}/>
           </div>
