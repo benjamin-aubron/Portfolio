@@ -13,7 +13,7 @@ import {
 export default function Nav() {
   return (
     <div className='fixed z-10 w-full flex items-center justify-between text-white bg-black border-b-[1px] border-[#1E2029] py-6 px-4'>
-      <a href="#home" className='flex text-3xl font-semibold'>
+      <a href="#home" className='flex text-4xl font-semibold'>
         <span className='text-[#8F9094]'>&#123; </span>
         <span className='hidden lg:flex'>Benjamin</span>
         <span className='flex lg:hidden'>B</span>
