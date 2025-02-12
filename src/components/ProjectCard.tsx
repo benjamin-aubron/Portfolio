@@ -8,7 +8,7 @@ export default function ProjectCard({project}: {project: Project}) {
   return (
     <div className="relative bg-neutral-900 text-neutral-200 p-4 rounded-2xl group border border-neutral-900 lg:hover:border-[--secondaryColor] duration-300">
       <div className="pb-2">
-        <img src={`${project.src}`} alt={`${project.name}`} className="object-cover object-center w-full h-52 rounded-t-xl saturate-50 group-hover:saturate-100 transition-all duration-300" />
+        <img src={`${project.src}`} alt={`${project.name}`} className="object-cover object-center w-full h-52 rounded-t-xl md:saturate-50 group-hover:saturate-100 transition-all duration-300" />
       </div>
       <h3 className="text-xl font-semibold text-neutral-100 py-1">{project.name}</h3>
       <div className="text-neutral-300 py-3">{project.date}</div>
