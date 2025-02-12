@@ -489,6 +489,11 @@ body {
   margin-bottom: .5rem;
 }
 
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .ml-1 {
   margin-left: .25rem;
 }
@@ -505,6 +510,14 @@ body {
   margin-top: 2.5rem;
 }
 
+.mr-2 {
+  margin-right: .5rem;
+}
+
+.mt-1 {
+  margin-top: .25rem;
+}
+
 .line-clamp-5 {
   overflow: hidden;
   display: -webkit-box;
@@ -516,8 +529,20 @@ body {
   display: block;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
+.inline {
+  display: inline;
+}
+
 .flex {
   display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
 }
 
 .grid {
@@ -558,6 +583,26 @@ body {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-\[\] {
+  height: ;
+}
+
+.h-\[24px\] {
+  height: 24px;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
+.h-fit {
+  height: fit-content;
 }
 
 .max-h-\[300px\] {
@@ -651,6 +696,10 @@ body {
 
 .items-center {
   align-items: center;
+}
+
+.items-baseline {
+  align-items: baseline;
 }
 
 .justify-start {
@@ -845,6 +894,11 @@ body {
   padding: 1.5rem;
 }
 
+.px-2 {
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
 .px-2\.5 {
   padding-left: .625rem;
   padding-right: .625rem;
@@ -900,6 +954,11 @@ body {
   padding-bottom: 1.5rem;
 }
 
+.py-\[3px\] {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
 .pb-1 {
   padding-bottom: .25rem;
 }
@@ -948,12 +1007,32 @@ body {
   padding-top: 1rem;
 }
 
+.pb-0 {
+  padding-bottom: 0;
+}
+
+.pb-0\.5 {
+  padding-bottom: .125rem;
+}
+
+.pb-\[\] {
+  padding-bottom: ;
+}
+
+.pb-\[1px\] {
+  padding-bottom: 1px;
+}
+
 .text-left {
   text-align: left;
 }
 
 .text-center {
   text-align: center;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .text-2xl {
@@ -1003,6 +1082,10 @@ body {
   font-weight: 600;
 }
 
+.leading-8 {
+  line-height: 2rem;
+}
+
 .text-\[\#8F9094\] {
   --tw-text-opacity: 1;
   color: rgb(143 144 148 / var(--tw-text-opacity, 1));
@@ -1014,6 +1097,10 @@ body {
 
 .text-\[--primaryColor\] {
   color: var(--primaryColor);
+}
+
+.text-\[--secondaryColor\] {
+  color: var(--secondaryColor);
 }
 
 .text-\[--tertiaryColor\] {
@@ -1227,6 +1314,14 @@ body {
 .hover\:bg-neutral-900:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(23 23 23 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:text-\[--primaryColor\]:hover {
+  color: var(--primaryColor);
+}
+
+.hover\:underline:hover {
+  text-decoration-line: underline;
 }
 
 .hover\:opacity-100:hover {
