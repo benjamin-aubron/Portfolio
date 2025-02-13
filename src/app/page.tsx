@@ -60,13 +60,10 @@ export default function HomePage() {
       <section id="timeline" className="bg-black max-w-screen-lg mx-auto px-4 py-32 text-neutral-100">
         <h2 className="text-4xl text-neutral-100 font-semibold pb-6">Chronologie</h2>
         <Accordion type="single" collapsible>
-          
-              {experiences.map((experience, index) => (
-                <AccordionItem  key={index} value={experience.position}><ExperienceCard  experience={experience} /></AccordionItem>
-              ))}
-          
+          {experiences.map((experience, index) => (
+            <AccordionItem  key={index} value={experience.position}><ExperienceCard  experience={experience} /></AccordionItem>
+          ))}
         </Accordion>
-
       </section>
 
       <section id="about" className="bg-black max-w-screen-lg mx-auto px-4 py-32 text-neutral-100">

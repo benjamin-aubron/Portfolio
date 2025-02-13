@@ -490,6 +490,11 @@ body {
   margin-bottom: .5rem;
 }
 
+.mx-\[19px\] {
+  margin-left: 19px;
+  margin-right: 19px;
+}
+
 .ml-1 {
   margin-left: .25rem;
 }
@@ -508,6 +513,14 @@ body {
 
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.mr-4 {
+  margin-right: 1rem;
+}
+
+.mr-6 {
+  margin-right: 1.5rem;
 }
 
 .line-clamp-5 {
@@ -573,6 +586,14 @@ body {
   height: 100vh;
 }
 
+.h-6 {
+  height: 1.5rem;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
 .max-h-\[300px\] {
   max-height: 300px;
 }
@@ -613,6 +634,10 @@ body {
   width: 100%;
 }
 
+.w-10 {
+  width: 2.5rem;
+}
+
 .min-w-\[2px\] {
   min-width: 2px;
 }
@@ -631,6 +656,10 @@ body {
 
 .shrink-0 {
   flex-shrink: 0;
+}
+
+.flex-grow {
+  flex-grow: 1;
 }
 
 .-translate-x-1\/2 {
@@ -672,6 +701,10 @@ body {
 
 .justify-start {
   justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -1003,6 +1036,10 @@ body {
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1127,6 +1164,21 @@ body {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.text-neutral-700 {
+  --tw-text-opacity: 1;
+  color: rgb(64 64 64 / var(--tw-text-opacity, 1));
+}
+
+.text-neutral-800 {
+  --tw-text-opacity: 1;
+  color: rgb(38 38 38 / var(--tw-text-opacity, 1));
+}
+
+.text-neutral-600 {
+  --tw-text-opacity: 1;
+  color: rgb(82 82 82 / var(--tw-text-opacity, 1));
+}
+
 .opacity-0 {
   opacity: 0;
 }
@@ -1188,12 +1240,12 @@ body {
   transition-delay: .3s;
 }
 
-.duration-300 {
-  transition-duration: .3s;
-}
-
 .duration-200 {
   transition-duration: .2s;
+}
+
+.duration-300 {
+  transition-duration: .3s;
 }
 
 .ease-in-out {
@@ -1214,12 +1266,12 @@ body {
   }
 }
 
-.duration-300 {
-  animation-duration: .3s;
-}
-
 .duration-200 {
   animation-duration: .2s;
+}
+
+.duration-300 {
+  animation-duration: .3s;
 }
 
 .delay-300 {
@@ -1484,6 +1536,11 @@ body {
     margin-right: 19px;
   }
 
+  .md\:mx-\[23px\] {
+    margin-left: 23px;
+    margin-right: 23px;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -1500,6 +1557,10 @@ body {
     height: 13rem;
   }
 
+  .md\:h-12 {
+    height: 3rem;
+  }
+
   .md\:max-h-\[300px\] {
     max-height: 300px;
   }
@@ -1510,6 +1571,10 @@ body {
 
   .md\:w-52 {
     width: 13rem;
+  }
+
+  .md\:w-12 {
+    width: 3rem;
   }
 
   .md\:flex-row {
