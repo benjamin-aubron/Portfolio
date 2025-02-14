@@ -7,7 +7,7 @@ export const experiences: Experience[] = [
     place: "Lyon, France",	
     activity: "study",
     startDate: "2024",
-    duration: "1 an",
+    duration: <span>1&nbsp;an</span>,
     description: "Formation au développement web en autodidacte, en utilisant React et en particulier le framework Next.js. Création de sites et d’applications web. Gestion de l’authentification et de bases de données.",
     skills: ["React,", "Next,", "PostgreSQL,", "Prisma,", "Docusaurus"],
   },
@@ -18,7 +18,7 @@ export const experiences: Experience[] = [
     activity: "entrepreneurship",
     startDate: "2022",
     endDate: "2024",
-    duration: "2 ans",
+    duration:<span>2&nbsp;ans</span>,
     description: "Développement d’une plateforme pour la transparence des comptes publics dans l’objectif de rendre accessible aux contribuables les données sur le bon usage de l’argent public.",
     skills: ["Web3,", "Blockchain,", "Finance Publique"],
   },
@@ -29,27 +29,31 @@ export const experiences: Experience[] = [
     activity: "study",
     startDate: "2021",
     endDate: "2022",
-    duration: "1 an",
+    duration: <span>1&nbsp;an</span>,
     description: "Formation diplômante “Data Science with R” d’HarvardX. Data Science avec Python en machine learning et deep learning (Keras et TensorFlow). Création d’un logiciel d’achat vente d’actif numérique avec effet levier et stratégies optimisées par IA. Optimisation de portefeuille selon les concepts de Markovitz",
     skills: ["Python,", "R,", "Machine-learning,", "Deep-learning,", "Keras,", "Tensorflow,", "Scikit-learn"],
   },
   {
     entity: "Manufacture Cartier",
-    position: "Ingénieur en logistique industrielle",
+    position: "Chargé de missions logistiques",
+    place: "Fribourg, Suisse",	
+    activity: "job",
+    startDate: "2019",
+    endDate: "2020",
+    duration:<span>1&nbsp;an</span>,
+    description: "Refonte des flux de production de la ligne Or, flux tiré vs flux poussé, gestion des stocks, organisation de production et suivi d’efficience. Création d’indicateurs pour le pilotage de production. Responsabilité du portefeuille de projets de la manufacture.",
+    skills: ["Gestion de stocks,", "KPI,", "PM Office,", "Production,", "Logistique"],
+  },
+  {
+    entity: "Manufacture Cartier",
+    position: "Ordonnanceur",
     place: "Fribourg, Suisse",	
     activity: "job",
     startDate: "2018",
-    endDate: "2020",
-    duration: "2 ans",
-    description: (
-      <div>
-        <h3 className="text-xl pb-1 text-neutral-100">Chargé de missions logistique :</h3>
-        <p> Refonte des flux de production de la ligne Or, flux tiré vs flux poussé, gestion des stocks, organisation de production et suivi d’efficience. Création d’indicateurs pour le pilotage de production. Responsabilité du portefeuille de projets de la manufacture.</p>
-        <h3 className="text-xl pt-4 pb-1 text-neutral-100">Ordonnanceur :</h3>
-        <p>Ordonnancement des métiers d’usinage, polissage et assemblage pour la ligne Or de la manufacture. Gestion des stocks des produits semi-finis pour assurer la production des montres. Création de KPI pour assurer le suivi des quantités de lancements sur les nouveautés.</p>
-      </div>
-    ),
-    skills: ["Ordonnancement,", "Gestion de stocks,", "KPI,", "PM Office,", "Production,", "Logistique"],
+    endDate: "2019",
+    duration:<span>1&nbsp;an</span>,
+    description:"Ordonnancement des métiers d’usinage, polissage et assemblage pour la ligne Or de la manufacture. Gestion des stocks des produits semi-finis pour assurer la production des montres. Création de KPI pour assurer le suivi des quantités de lancements sur les nouveautés.",
+    skills: ["Ordonnancement,", "Gestion de stocks,", "KPI,", "SAP-APO,", "Production"],
   },
   {
     entity: "Chaumet",
@@ -58,7 +62,7 @@ export const experiences: Experience[] = [
     activity: "job",
     startDate: "2018",
     endDate: "2018",
-    duration: "6 mois",
+    duration: <span>6&nbsp;mois</span>,
     description: "Calcul des leadtime et simulation des coûts de transports entre la France et les clients en Asie Pacifique, incluant les coûts de douanes en fonction des produits (normes CITES).",
     skills: ["Gestion de projet,", "5S,","VBA,","SAP,","règlementations douanières pour les produits de luxe"],
   },
@@ -69,7 +73,7 @@ export const experiences: Experience[] = [
     activity: "study",
     startDate: "2017",
     endDate: "2018",
-    duration: "1 an",
+    duration: <span>1&nbsp;an</span>,
     description: "",
   },
   { 
@@ -78,7 +82,7 @@ export const experiences: Experience[] = [
     place: "Shanghai, Chine",
     activity: "study",
     startDate: "2017",
-    duration: "6 mois",
+    duration: <span>6&nbsp;mois</span>,
     description: "",
   },
   {
@@ -88,7 +92,7 @@ export const experiences: Experience[] = [
     activity: "study",
     startDate: "2014",
     endDate: "2018",
-    duration: "4 ans",
+    duration: <span>4&nbsp;ans</span>,
     description: "",
   },
 

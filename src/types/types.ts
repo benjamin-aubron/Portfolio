@@ -18,7 +18,7 @@ export type Experience = {
   activity: string;
   startDate: string;
   endDate?: string;
-  duration: string;
+  duration: string | React.ReactNode;
   description: string | React.ReactNode;
   skills?: string[];
 }
