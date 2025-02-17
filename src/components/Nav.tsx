@@ -19,12 +19,12 @@ export default function Nav() {
         <span className='flex lg:hidden'>B</span>
         <span className='text-[#8F9094]'> &#125;</span>
       </a>
-      <div className='hidden md:flex items-center gap-4 text-lg'>
-        <a href="#project">Projets</a>
-        <a href="#skills">Compétences</a>
-        <a href="#stack">Stack favorite</a>
-        <a href="#timeline">Chronologie</a>
-        <a href="#about">A propos</a>
+      <div className='hidden md:flex items-center text-lg'>
+        <a href="#project" className="hover:bg-neutral-800 rounded-md py-2 px-4">Projets</a>
+        <a href="#skills" className="hover:bg-neutral-800 rounded-md py-2 px-4">Compétences</a>
+        <a href="#stack" className="hover:bg-neutral-800 rounded-md py-2 px-4">Stack favorite</a>
+        <a href="#timeline" className="hover:bg-neutral-800 rounded-md py-2 px-4">Chronologie</a>
+        <a href="#about" className="hover:bg-neutral-800 rounded-md py-2 px-4">A propos</a>
       </div>
       <div className="flex md:hidden text-4xl">
         <Sheet>
