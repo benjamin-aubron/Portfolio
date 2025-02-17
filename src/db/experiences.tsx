@@ -61,7 +61,6 @@ export const experiences: Experience[] = [
     place: "Paris, France",
     activity: "job",
     startDate: "2018",
-    endDate: "2018",
     duration: <span>6&nbsp;mois</span>,
     description: "Calcul des leadtime et simulation des coûts de transports entre la France et les clients en Asie Pacifique, incluant les coûts de douanes en fonction des produits (normes CITES).",
     skills: ["Gestion de projet,", "5S,","VBA,","SAP,","règlementations douanières pour les produits de luxe"],

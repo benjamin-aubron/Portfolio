@@ -11,7 +11,7 @@ import {
 export default function ExperienceCard({experience}: {experience: Experience}) {
   return (
     <div className="pb-2">
-      <AccordionTrigger className={experience.description ?`[&[data-state=open]>div>div:first-child]:bg-[--primaryColor]`:"[&[data-state=open]>svg]:rotate-0"}>
+      <AccordionTrigger className={` [&[data-state=open]>svg]:text-[--primaryColor] ${experience.description ?`[&[data-state=open]>div>div:first-child]:bg-[--primaryColor]`:"[&>svg]:invisible"}`}>
         <div className="flex items-center justify-start w-full">
           <div className="flex flex-0 items-center justify-center w-8 h-8 md:w-12 md:h-12 rounded-md bg-neutral-500">
             {experience.activity === "job" && <MdWork className="text-xl md:text-2xl text-black" />}
