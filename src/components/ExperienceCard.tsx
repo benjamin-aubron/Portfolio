@@ -42,13 +42,15 @@ export default function ExperienceCard({
                 {experience.place}
               </div>
             </div>
-            <div className="flex flex-col text-right mr-2 md:mr-6 font-normal">
-              <div className="text-neutral-500">
+            <div
+              className={`flex flex-col text-right mr-2 md:mr-6 font-normal text-neutral-500`}
+            >
+              <div>
                 {experience.startDate}
                 {experience.endDate && " - "}
                 {experience.endDate}
               </div>
-              <div className="text-neutral-500">{experience.duration}</div>
+              <div>{experience.duration}</div>
             </div>
           </div>
         </div>
