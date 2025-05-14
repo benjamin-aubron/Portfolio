@@ -2,18 +2,15 @@ import { LuAlignJustify } from "react-icons/lu";
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
-  SheetHeader,
   SheetTitle,
   SheetTrigger,
   SheetClose,
 
 } from "@/components/shadcn/sheet"
 import LanguageSwitch from "./LanguageSwitch";
-import { getI18n, getScopedI18n } from '../../public/locales/server'
+import { getScopedI18n } from '../../public/locales/server'
 
 export default async function Nav() {
-  // const t = await getI18n()
   const t = await getScopedI18n('nav')
   
   return (

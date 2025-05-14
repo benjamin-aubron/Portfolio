@@ -13,14 +13,8 @@ export default {
     currently: "Currently improving my Frontend skills (React / Next)",
     cv: "My Resume",
   },
-  h2: {
-    projet: "My Latest Projects",
-    skill: "My Skills",
-    stack: "My Favorite Stack",
-    timeline: "Timeline",
-    about: "About",
-  },
-  projects:{
+  project:{
+    title:"My Latest Projects",
     alaska:{
       name:"Alaska Pete's Roadhouse Grille",
       description:"Creation of a restaurant website allowing to present menus, place orders, book a table, and manage payments.",
@@ -37,7 +31,17 @@ export default {
       date:"2023 → Today",
     },
   },
+  skills:{
+    title:"My Skills",
+  },
+  stack:{
+    title:"My Favorite Stack",
+  },
+  timeline:{
+    title:"Timeline",
+  },
   about: {
+    title: "About",
     about1: "Front-end developer, I master the Framework",
     about2: "I seek to put my technical skills and creativity at the service of innovative projects. Additionally, I closely follow paradigm shifts around technologies",
     about3: "blockchain and web 3.0",

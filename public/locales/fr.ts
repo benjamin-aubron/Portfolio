@@ -13,14 +13,8 @@ export default {
     currently: "Me perfectionnant actuellement en Frontend (React / Next)",
     cv:"Mon CV",
   },
-  h2:{
-    projet:"Mes derniers projets",
-    skill:"Mes compétences",
-    stack:"Ma stack favorite",
-    timeline:"Chronologie",
-    about:"A propos",
-  },
-  projects:{
+  project:{
+    title:"Mes derniers projets",
     alaska:{
       name:"Alaska Pete's Roadhouse Grille",
       description:"Création d'un site d'un restaurant permettant de présenter les menus, passer des commandes, réserver une table et gérer les paiements.",
@@ -36,10 +30,18 @@ export default {
       description:"TheCryptoGalaxy est un site rassemblant à un seul endroit les meilleurs outils et Dapp des écosystèmes blockchain les plus développés.",
       date:"2023 → Aujourd'hui",
     },
-
-
+  },
+  skills:{
+    title:"Mes compétences",
+  },
+  stack:{
+    title:"Ma stack favorite",
+  },
+  timeline:{
+    title:"Chronologie",
   },
   about:{
+    title : "A propos",
     about1:"Développeur front end, je maîtrise le Framework",
     about2:"Je cherche à mettre mes compétences techniques et ma créativité au service de projets innovants. De plus, je suis avec attention les changements de paradigmes autour des technologies",
     about3:"blockchain et web 3.0",

@@ -7,7 +7,7 @@ import { getScopedI18n } from '../../public/locales/server'
 
 export default async function ProjectCard({project}: {project: Project}) {
 
-  const t = await getScopedI18n('projects')
+  const t = await getScopedI18n('project')
 
   return (
     <div className="relative bg-neutral-900 text-neutral-200 p-4 rounded-2xl group border border-neutral-900 lg:hover:border-[--secondaryColor] duration-300">
