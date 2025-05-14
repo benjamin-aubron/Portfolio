@@ -14,10 +14,10 @@ export default async function ProjectCard({project}: {project: Project}) {
       <div className="pb-2">
         <img src={`${project.src}`} alt={`${project.name}`} className="object-cover object-center w-full h-52 rounded-t-xl md:saturate-50 group-hover:saturate-100 transition-all duration-300" />
       </div>
-      <h3 className="text-xl font-semibold text-neutral-100 py-1">{t(project.name)}</h3>
-      <div className="text-neutral-300 py-3">{t(project.date)}</div>
+      <h3 className="text-xl font-semibold text-neutral-100 py-1">{t(project.name as "alaska.name" | "amicale.name" | "cryptogalaxy.name")}</h3>
+      <div className="text-neutral-300 py-3">{t(project.date as "alaska.date" | "amicale.date" | "cryptogalaxy.date")}</div>
       <div className="pb-1 h-32 text-neutral-40">
-        <div className="line-clamp-5">{t(project.description)}</div>
+        <div className="line-clamp-5">{t(project.description as "alaska.description" | "amicale.description" | "cryptogalaxy.description")}</div>
       </div>
       <hr className="border-neutral-700" />
       <div className="flex flex-wrap gap-2 pt-2 pb-10">
