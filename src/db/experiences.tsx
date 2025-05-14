@@ -3,6 +3,16 @@ import { Experience } from "@/types/types";
 export const experiences: Experience[] = [
   {
     entity:"",
+    position: "Développeur Web Freelance",
+    place: "Lyon, France",	
+    activity: "job",
+    startDate: "2025",
+    duration: <span>1&nbsp;an</span>,
+    description: "Formation au développement web en autodidacte, en utilisant React et en particulier le framework Next.js. Création de sites et d’applications web. Gestion de l’authentification et de bases de données.",
+    skills: ["React,", "Next,", "PostgreSQL,", "Prisma,", "Docusaurus"],
+  },
+  {
+    entity:"",
     position: "Développeur Web",
     place: "Lyon, France",	
     activity: "study",
