@@ -52,6 +52,10 @@ export default {
   },
   stack:{
     title:"Ma stack favorite",
+    next:"Framework React moderne, Next m'offre des performances optimisées et un rendu rapide grâce au server-side rendering (SSR) et au static site generation (SSG). De plus, Next me permet de créer des applications fullstack.",
+    tailwind:"Pour le styling, Tailwind offre un excellent compromis entre simplicité, rapidité et performances",
+    typescript:"Grâce à typescript je crée un code robuste, tout en me facilitant la maintenance.",
+    auth:"Flexible et facile à intégrer, la combination de BetterAuth et Prisma me permet de facilement gérer l'authentification et l'accès aux bases de données."
   },
   timeline:{
     title:"Chronologie",
