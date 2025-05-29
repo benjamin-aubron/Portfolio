@@ -6,12 +6,16 @@ import {
   AccordionContent,
   AccordionTrigger,
 } from "@/components/shadcn/accordion";
+import { getScopedI18n } from "../../public/locales/server";
 
-export default function ExperienceCard({
+
+
+export default async function ExperienceCard({
   experience,
 }: {
   experience: Experience;
 }) {
+  const t = await getScopedI18n("timeline")
   return (
     <div className="pb-2">
       <AccordionTrigger
@@ -35,11 +39,11 @@ export default function ExperienceCard({
           </div>
           <div className="flex flex-1 justify-between ml-3 text-neutral-200 text-sm md:text-xl">
             <div>
-              <div>{experience.position}</div>
+              <div>{t(experience.position)}</div>
               <div className="text-neutral-500 font-light">
                 {experience.entity}
                 {experience.entity && ", "}
-                {experience.place}
+                {t(experience.place)}
               </div>
             </div>
             <div
@@ -50,7 +54,7 @@ export default function ExperienceCard({
                 {experience.endDate && " - "}
                 {experience.endDate}
               </div>
-              <div>{experience.duration}</div>
+              <div>{t(experience.duration)}</div>
             </div>
           </div>
         </div>
@@ -60,17 +64,13 @@ export default function ExperienceCard({
           <div className="min-w-[2px] mx-[15px] md:mx-[23px] bg-[--secondaryColor] self-stretch rounded"></div>
           <div className="ml-3">
             <div className="py-1 text-neutral-200 md:max-w-[80%]">
-              {experience.description}
+              {t(experience.description)}
             </div>
             <div className="flex flex-wrap py-2 items-center">
               {experience.skills && (
                 <div className="text-neutral-300 mr-1">Compétences : </div>
               )}
-              {experience.skills?.map((skill, index) => (
-                <div className="text-[--secondaryColor] mr-1" key={index}>
-                  {skill}
-                </div>
-              ))}
+              <span className="text-[--secondaryColor]">{t(experience.skills)}</span>
             </div>
           </div>
         </div>

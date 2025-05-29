@@ -59,6 +59,13 @@ export default {
   },
   timeline:{
     title:"Timeline",
+    devWebFreelance:{
+      position:"Web Developper - Freelance",
+      place: "Lyon, France",
+      duration: "1 year",
+      description: "Self-taught web development training, using React and particularly the Next.js framework. Creation of websites and web applications. Management of authentication and databases.",
+      skills: "React, Next, PostgreSQL, Prisma, Docusaurus",
+    },
   },
   about: {
     title: "About",

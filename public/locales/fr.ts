@@ -59,6 +59,20 @@ export default {
   },
   timeline:{
     title:"Chronologie",
+    devWebFreelance:{
+      position:"Développeur Web Freelance",
+      place: "Lyon, France",
+      duration: "1 an",
+      description: "Formation au développement web en autodidacte, en utilisant React et en particulier le framework Next.js. Création de sites et d’applications web. Gestion de l’authentification et de bases de données.",
+      skills: ["React,", "Next,", "PostgreSQL,", "Prisma,", "Docusaurus"],
+    },
+    devWeb:{
+
+    },
+    entrepreneurship:{
+
+    },
+
   },
   about:{
     title : "A propos",
