@@ -35,7 +35,7 @@ export default function SkillsTabs() {
       </div>
       <hr className="my-2" />
       <div
-        className={`flex flex-col space-y-4 md:space-y-0 md:flex-row md:items-center justify-around ${
+        className={`grid grid-cols-1 md:grid-cols-3 gap-4 ${
           engineeringSkills
             ? "delay-300 duration-300 opacity-100"
             : "duration-300 opacity-0"
@@ -611,7 +611,7 @@ export default function SkillsTabs() {
         </div>
       </div>
       <div
-        className={`relative -top-[780px] md:-top-[252px] flex flex-col space-y-4 md:space-y-0 md:flex-row md:items-center justify-around ${
+        className={`relative -top-[780px] md:-top-[252px] grid grid-cols-1 md:grid-cols-2 gap-4  ${
           engineeringSkills
             ? "duration-300 opacity-0 -z-10"
             : "delay-300 duration-300 opacity-100 z-10"
