@@ -8,6 +8,59 @@ import {
 } from "@/components/shadcn/accordion";
 import { getScopedI18n } from "../../public/locales/server";
 
+type PositionProps =
+  | "devWebFreelance.position"
+  | "devWeb.position"
+  | "entrepreneurship.position"
+  | "dataScience.position"
+  | "logistics.position"
+  | "workshopScheduler.position"
+  | "assistant.position"
+  | "studentA2I.position"
+  | "studentLCIE.position"
+  | "studentIMSI.position";
+
+type PlaceProps =
+  | "devWebFreelance.place"
+  | "devWeb.place"
+  | "entrepreneurship.place"
+  | "dataScience.place"
+  | "logistics.place"
+  | "workshopScheduler.place"
+  | "assistant.place"
+  | "studentA2I.place"
+  | "studentLCIE.place"
+  | "studentIMSI.place";
+  
+type DurationProps =
+  | "devWebFreelance.duration"
+  | "devWeb.duration"
+  | "entrepreneurship.duration"
+  | "dataScience.duration"
+  | "logistics.duration"
+  | "workshopScheduler.duration"
+  | "assistant.duration"
+  | "studentA2I.duration"
+  | "studentLCIE.duration"
+  | "studentIMSI.duration";
+
+type DescriptionProps =
+  | "devWebFreelance.description"
+  | "devWeb.description"
+  | "entrepreneurship.description"
+  | "dataScience.description"
+  | "logistics.description"
+  | "workshopScheduler.description"
+  | "assistant.description"
+
+type SkillsProps =
+  | "devWebFreelance.skills"
+  | "devWeb.skills"
+  | "entrepreneurship.skills"
+  | "dataScience.skills"
+  | "logistics.skills"
+  | "workshopScheduler.skills"
+  | "assistant.skills"
 
 
 export default async function ExperienceCard({
@@ -15,7 +68,7 @@ export default async function ExperienceCard({
 }: {
   experience: Experience;
 }) {
-  const t = await getScopedI18n("timeline")
+  const t = await getScopedI18n("timeline");
   return (
     <div className="pb-2">
       <AccordionTrigger
@@ -39,11 +92,11 @@ export default async function ExperienceCard({
           </div>
           <div className="flex flex-1 justify-between ml-3 text-neutral-200 text-sm md:text-xl">
             <div>
-              <div>{t(experience.position)}</div>
+              <div>{t(experience.position as PositionProps)}</div>
               <div className="text-neutral-500 font-light">
                 {experience.entity}
                 {experience.entity && ", "}
-                {t(experience.place)}
+                {t(experience.place as PlaceProps)}
               </div>
             </div>
             <div
@@ -54,7 +107,7 @@ export default async function ExperienceCard({
                 {experience.endDate && " - "}
                 {experience.endDate}
               </div>
-              <div>{t(experience.duration)}</div>
+              <div>{t(experience.duration as DurationProps)}</div>
             </div>
           </div>
         </div>
@@ -64,13 +117,15 @@ export default async function ExperienceCard({
           <div className="min-w-[2px] mx-[15px] md:mx-[23px] bg-[--secondaryColor] self-stretch rounded"></div>
           <div className="ml-3">
             <div className="py-1 text-neutral-200 md:max-w-[80%]">
-              {t(experience.description)}
+              {t(experience.description as DescriptionProps)}
             </div>
             <div className="flex flex-wrap py-2 items-center">
               {experience.skills && (
                 <div className="text-neutral-300 mr-1">Compétences : </div>
               )}
-              <span className="text-[--secondaryColor]">{t(experience.skills)}</span>
+              <span className="text-[--secondaryColor]">
+                {t(experience.skills as SkillsProps)}
+              </span>
             </div>
           </div>
         </div>

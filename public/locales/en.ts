@@ -60,12 +60,69 @@ export default {
   timeline:{
     title:"Timeline",
     devWebFreelance:{
-      position:"Web Developper - Freelance",
+      position:"Freelance Web Developer",
       place: "Lyon, France",
       duration: "1 year",
-      description: "Self-taught web development training, using React and particularly the Next.js framework. Creation of websites and web applications. Management of authentication and databases.",
+      description: "Lorem Ipsum",
       skills: "React, Next, PostgreSQL, Prisma, Docusaurus",
     },
+    devWeb:{
+      position:"Web Developer",
+      place: "Lyon, France",
+      duration: "1 year",
+      description: "Self-taught web development training, using React and especially the Next.js framework. Creation of websites and web applications. Management of authentication and databases.",
+      skills: "React, Next, PostgreSQL, Prisma, Docusaurus",
+    },
+    entrepreneurship:{
+      position:"Entrepreneurial Project",
+      place: "Lyon, France",
+      duration: "2 years",
+      description: "Development of a platform for public accounts transparency with the aim of making data on the proper use of public money accessible to taxpayers.",
+      skills: "Web3, Blockchain, Public Finance",
+    },
+    dataScience:{
+      position:"Data Science Training",
+      place: "Chambéry, France",
+      duration: "1 year",
+      description: "Degree course 'Data Science with R' from HarvardX. Data Science with Python in machine learning and deep learning (Keras and TensorFlow). Creation of a software for buying and selling digital assets with leverage and AI-optimized strategies. Portfolio optimization according to Markowitz concepts.",
+      skills: "Python, R, Machine-learning, Deep-learning, Keras, Tensorflow, Scikit-learn",
+    },
+    logistics:{
+      position:"Logistics Project Manager",
+      place: "Fribourg, Switzerland",
+      duration: "1 year",
+      description: "Redesign of production flows for the Gold line, pull vs push flow, stock management, production organization and efficiency monitoring. Creation of indicators for production management. Responsibility for the project portfolio of the manufacture.",
+      skills: "Stock management, KPI, PM Office, Production, Logistics",
+    },
+    workshopScheduler:{
+      position:"Workshop Scheduler",
+      place: "Fribourg, Switzerland",
+      duration: "1 year",
+      description: "Scheduling of machining, polishing, and assembly trades for the Gold line of the manufacture. Management of semi-finished product stocks to ensure watch production. Creation of KPIs to monitor the launch quantities on new products.",
+      skills: "Scheduling, Stock management, KPI, SAP-APO, Production",
+    },
+    assistant:{
+      position:"Project Manager Assistant Intern",
+      place: "Paris, France",
+      duration: "6 months",
+      description: "Calculation of lead times and simulation of transport costs between France and clients in Asia Pacific, including customs costs depending on products (CITES standards).",
+      skills: "Project management, 5S, VBA, SAP, customs regulations for luxury products",
+    },
+    studentA2I:{
+      position:"Master in International Industrial Affairs (A2i)",
+      place: "Belfort, France",
+      duration: "1 year",
+    },
+    studentLCIE:{
+      position:"University degree in Innovation and Entrepreneurship",
+      place: "Shanghai, China",
+      duration: "6 months",
+    },
+    studentIMSI:{
+      position:"Engineering degree in Industrial Logistics",
+      place: "Belfort, France",
+      duration: "4 years",
+    }
   },
   about: {
     title: "About",
