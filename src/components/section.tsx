@@ -5,7 +5,7 @@ type SectionProps = {
   boxsize?: "lg" | "xl";
 };
 
-export default function Section({
+export function Section({
   id,
   title,
   children,
