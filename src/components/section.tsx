@@ -1,12 +1,16 @@
-
 type SectionProps = {
-  id: string
-  title : string
-  children : React.ReactNode
-  boxsize?: "lg" | "xl" 
-}
+  id: string;
+  title: string;
+  children: React.ReactNode;
+  boxsize?: "lg" | "xl";
+};
 
-export default function Section({id, title, children,boxsize="lg"} : SectionProps) {
+export default function Section({
+  id,
+  title,
+  children,
+  boxsize = "lg",
+}: SectionProps) {
   return (
     <section
       id={id}
