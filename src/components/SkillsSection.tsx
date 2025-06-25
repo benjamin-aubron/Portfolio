@@ -1,4 +1,4 @@
-import Section from "./Section";
+import Section from "@/components/Section";
 import SkillsTabs from "@/components/SkillsTabs";
 import { getScopedI18n } from "../../public/locales/server";
 
