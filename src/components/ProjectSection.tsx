@@ -1,4 +1,4 @@
-import Section from "@/components/Section";
+import Section from "../components/Section";
 import ProjectCard from "@/components/ProjectCard";
 import { getScopedI18n } from "../../public/locales/server";
 import { projects } from "@/db/projects";

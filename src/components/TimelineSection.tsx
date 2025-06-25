@@ -1,4 +1,4 @@
-import Section from "@/components/Section";
+import Section from "../components/Section";
 import TimelineCard from "@/components/TimelineCard";
 import { Accordion, AccordionItem } from "@/components/shadcn/accordion";
 import { experiences } from "@/db/experiences";
