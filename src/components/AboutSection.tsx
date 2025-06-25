@@ -1,4 +1,4 @@
-import Section from "../components/Section";
+import Section from "./Section";
 import { getScopedI18n } from "../../public/locales/server";
 
 export default async function AboutSection() {
