@@ -5,12 +5,7 @@ type SectionProps = {
   boxsize?: "lg" | "xl";
 };
 
-export function Section({
-  id,
-  title,
-  children,
-  boxsize = "lg",
-}: SectionProps) {
+export function Section({ id, title, children, boxsize = "lg" }: SectionProps) {
   return (
     <section
       id={id}
