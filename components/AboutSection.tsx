@@ -1,8 +1,9 @@
 import Section from "@/components/Section";
+import Image from "next/image";
 
 export default function AboutSection() {
   return (
-    <Section id="about" title="A propos"> 
+    <Section id="about" title="A propos">
       <div className="flex flex-col lg:flex-row items-center justify-between gap-20 lg:gap-10">
         <div>
           <div className="leading-8 py-2">
@@ -20,16 +21,21 @@ export default function AboutSection() {
               </svg>{" "}
               Next.JS
             </span>
-            . Je cherche à mettre mes compétences techniques et ma créativité au service de projets innovants. De plus, je suis avec attention les changements de paradigmes autour des technologies{" "}
+            . Je cherche à mettre mes compétences techniques et ma créativité au
+            service de projets innovants. De plus, je suis avec attention les
+            changements de paradigmes autour des technologies{" "}
             <span className="py-[3px] px-2 bg-neutral-950 border border-neutral-800 rounded-md whitespace-nowrap">
-              <img
-                src="web3.png"
+              <Image
+                src="/web3.png"
                 alt="blockchain network"
-                className="inline items-center h-5 pb-1 mr-2"
+                className="inline items-center w-4 h-5 pb-1 mr-2"
+                width={50}
+                height={50}
               />
               blockchain et web 3.0
             </span>
-            . Je participe également  à des projets open source tels que le projet{" "}
+            . Je participe également à des projets open source tels que le
+            projet{" "}
             <a
               href="https://github.com/dataforgoodfr/13_eclaireur_public"
               target="_blank"
@@ -40,66 +46,86 @@ export default function AboutSection() {
             .
           </div>
           <div className="leading-8 py-2">
-            Je suis une personne curieuse et désireuse de comprendre la complexité de notre monde. Je m'intéresse à différents domaines tels que la
+            Je suis une personne curieuse et désireuse de comprendre la
+            complexité de notre monde. Je m&apos;intéresse à différents domaines
+            tels que la
             <span className="py-[3px] px-2 bg-neutral-950 border border-neutral-800 rounded-md whitespace-nowrap">
-              <img
-                src="geopolitique.png"
+              <Image
+                src="/geopolitique.png"
                 alt="earth"
-                className="inline items-center h-5 pb-1 mr-2"
+                className="inline items-center w-4 h-5 pb-1 mr-2"
+                width={50}
+                height={50}
               />
               géopolitique
             </span>
             ,{" "}
             <span className="py-[3px] px-2 bg-neutral-950 border border-neutral-800 rounded-md whitespace-nowrap">
-              <img
-                src="economie.png"
+              <Image
+                src="/economie.png"
                 alt="coin"
-                className="inline items-center h-5 pb-1 mr-2"
+                className="inline items-center w-4 h-5 pb-1 mr-2"
+                width={50}
+                height={50}
               />
-              l'économie et la finance
+              l&apos;économie et la finance
             </span>{" "}
             ainsi que la.{" "}
             <span className="py-[3px] px-2 bg-neutral-950 border border-neutral-800 rounded-md whitespace-nowrap">
-              <img
-                src="sociologie.png"
+              <Image
+                src="/sociologie.png"
                 alt="social network"
-                className="inline items-center h-5 pb-1 mr-2"
+                className="inline items-center w-4 h-5 pb-1 mr-2"
+                width={50}
+                height={50}
               />
               sociologie.
             </span>
           </div>
           <div className="leading-8 py-2">
-            Sur mon temps libre, j'aime découvrir la 
+            Sur mon temps libre, j&apos;aime découvrir la
             <span className="py-[3px] px-2 bg-neutral-950 border border-neutral-800 rounded-md whitespace-nowrap">
-              <img
-                src="cuisine.png"
+              <Image
+                src="/cuisine.png"
                 alt="chef hat"
-                className="inline items-center h-5 pb-1 mr-2"
+                className="inline items-center w-4 h-5 pb-1 mr-2"
+                width={50}
+                height={50}
               />
               cuisine du monde
             </span>
-            , jouer au 
+            , jouer au
             <span className="py-[3px] px-2 bg-neutral-950 border border-neutral-800 rounded-md whitespace-nowrap">
-              <img
-                src="badminton.png"
+              <Image
+                src="/badminton.png"
                 alt="badminton racket"
-                className="inline items-center h-5 pb-0.5 mr-2"
+                className="inline items-center w-5 h-5 pb-0.5 mr-2"
+                width={50}
+                height={50}
               />
               badminton
             </span>{" "}
-            et je suis trésorier dans une association pour la promotion du 
+            et je suis trésorier dans une association pour la promotion du
             <span className="py-[3px] px-2 bg-neutral-950 border border-neutral-800 rounded-md whitespace-nowrap">
-              <img
-                src="donsang.png"
+              <Image
+                src="/donsang.png"
                 alt="Blood drop"
-                className="inline items-center h-5 pb-1 mr-1"
+                className="inline items-center w-3 h-5 pb-1 mr-1"
+                width={25}
+                height={25}
               />
               Don de Sang
             </span>
             .
           </div>
         </div>
-        <img src="photo.png" alt="My photo" className="w-80 rounded-full" />
+        <Image
+          src="/photo.png"
+          alt="My photo"
+          className="w-80 rounded-full"
+          width={300}
+          height={300}
+        />
       </div>
     </Section>
   );

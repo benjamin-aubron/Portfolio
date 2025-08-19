@@ -13,7 +13,7 @@ export default function Footer() {
         <span className="text-[--primaryColor] ">Next.js</span>
       </div>
       <div className="text-center text-xl pb-8">
-        N'hésitez pas à me contacter pour discuter de votre projet ou de vos
+        N&apos;hésitez pas à me contacter pour discuter de votre projet ou de vos
         besoins.
       </div>
       <div className="flex flex-wrap items-center justify-center gap-3 md:gap-6 text-neutral-100 text-lg md:text-xl pt-4">

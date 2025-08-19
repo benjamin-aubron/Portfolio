@@ -1,15 +1,18 @@
 import { IoGlobeOutline } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa";
 import { Project } from "@/lib/types";
+import Image from "next/image";
 
 export default async function ProjectCard({ project }: { project: Project }) {
   return (
     <div className="relative bg-neutral-900 text-neutral-200 p-4 rounded-2xl group border border-neutral-900 lg:hover:border-[--secondaryColor] duration-300">
       <div className="pb-2">
-        <img
-          src={`${project.src}`}
+        <Image
+          src={`/${project.src}`}
           alt={`${project.name}`}
           className="object-cover object-center w-full h-52 rounded-t-xl md:saturate-50 group-hover:saturate-100 transition-all duration-300"
+          width={300}
+          height={300}
         />
       </div>
       <h3 className="text-xl font-semibold text-neutral-100 py-1">
