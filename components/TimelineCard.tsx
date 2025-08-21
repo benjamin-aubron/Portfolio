@@ -87,9 +87,9 @@ export default async function ExperienceCard({
           <div className="flex flex-col md:flex-row md:flex-1 md:justify-between ml-3 text-neutral-200 text-sm md:text-xl">
             <div>
               <div>{experience.position as PositionProps}</div>
-              <div className="flex text-neutral-500 font-light">
+              <div className="flex text-neutral-500 font-normal">
                 <div
-                  className={`flex text-right mr-1 font-normal text-neutral-500`}
+                  className={`flex md:hidden text-right mr-1 text-neutral-500`}
                 >
                   <div>
                     {experience.startDate}
