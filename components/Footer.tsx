@@ -9,8 +9,8 @@ export default function Footer() {
         Me contacter.
       </h2>
       <div className="text-center text-xl pt-8">
-        Développeur Front-end avec{" "}
-        <span className="text-[--primaryColor] ">Next.js</span>
+        Développeur FullStack avec{" "}
+        <span className="text-primary">Next.js</span>
       </div>
       <div className="text-center text-xl pb-8">
         N&apos;hésitez pas à me contacter pour discuter de votre projet ou de vos
@@ -22,7 +22,7 @@ export default function Footer() {
           target="_blank"
           className="flex items-center gap-2 bg-neutral-900 hover:bg-neutral-800 rounded-lg py-2 px-2.5 md:px-4 font-semibold"
         >
-          <FaGithub className="text-base md:text-lg text-[--primaryColorDark] " />
+          <FaGithub className="text-base md:text-lg text-primary" />
           GitHub
         </a>
         <a
@@ -30,14 +30,14 @@ export default function Footer() {
           target="_blank"
           className="flex items-center gap-2 bg-neutral-900 hover:bg-neutral-800 rounded-lg py-2 px-2.5 md:px-4 font-semibold"
         >
-          <PiReadCvLogoFill className="text-base md:text-xl text-[--primaryColorDark] " />
+          <PiReadCvLogoFill className="text-base md:text-xl text-primary" />
           Mon CV
         </a>
         <a
           href="mailto:benjamin.aubron@outlook.com"
           className="flex items-center gap-2 bg-neutral-900 hover:bg-neutral-800 rounded-lg py-2 px-2.5 md:px-4 font-semibold"
         >
-          <MdEmail className="text-base md:text-xl text-[--primaryColorDark] " />
+          <MdEmail className="text-base md:text-xl text-primary" />
           Email
         </a>
       </div>

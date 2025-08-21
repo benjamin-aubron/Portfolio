@@ -112,7 +112,7 @@ export default async function ExperienceCard({
       </AccordionTrigger>
       <AccordionContent className={`${experience.description ? "" : "hidden"}`}>
         <div className="flex items-center justify-start pb-2 text-sm md:text-base">
-          <div className="min-w-[2px] mx-[15px] md:mx-[23px] bg-[--secondaryColor] self-stretch rounded"></div>
+          <div className="min-w-[2px] mx-[15px] md:mx-[23px] bg-secondary self-stretch rounded"></div>
           <div className="ml-3">
             <div className="py-1 text-neutral-200 md:max-w-[80%]">
               {experience.description as DescriptionProps}
@@ -121,7 +121,7 @@ export default async function ExperienceCard({
               {experience.skills && (
                 <div className="text-neutral-300 mr-1">Compétences : </div>
               )}
-              <span className="text-[--secondaryColor]">
+              <span className="text-secondary">
                 {experience.skills as SkillsProps}
               </span>
             </div>

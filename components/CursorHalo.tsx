@@ -29,7 +29,7 @@ const CursorHalo = ({
 
   return (
     <div
-      className="absolute w-24 h-24 bg-[--primaryColor] pointer-events-none opacity-100 blur-3xl rounded-full"
+      className="absolute w-24 h-24 bg-primary pointer-events-none opacity-100 blur-3xl rounded-full"
       style={{
         transform: `translate(${position.x}px, ${position.y}px)`,
       }}

@@ -39,7 +39,7 @@ export default function AboutSection() {
             <a
               href="https://github.com/dataforgoodfr/13_eclaireur_public"
               target="_blank"
-              className="hover:underline text-[--secondaryColor] hover:text-[--primaryColor]"
+              className="hover:underline text-secondary hover:text-primary"
             >
               @éclaireur public
             </a>

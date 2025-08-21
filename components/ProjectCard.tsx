@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default async function ProjectCard({ project }: { project: Project }) {
   return (
-    <div className="relative bg-neutral-900 text-neutral-200 p-4 rounded-2xl group border border-neutral-900 lg:hover:border-[--secondaryColor] duration-300">
+    <div className="relative bg-neutral-900 text-neutral-200 p-4 rounded-2xl group border border-neutral-900 lg:hover:border-secondary duration-300">
       <div className="pb-2">
         <Image
           src={`/${project.src}`}

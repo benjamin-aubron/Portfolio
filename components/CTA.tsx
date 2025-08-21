@@ -9,7 +9,7 @@ export default function CTA() {
       className="relative max-w-screen-xl mx-auto pt-20 px-6 h-screen"
     >
       <div>
-        <div className="text-[--primaryColorDark] text-2xl md:text-4xl font-semibold pt-20">
+        <div className="text-primary text-2xl md:text-4xl font-semibold pt-20">
           Hey 👋 ! Je suis
         </div>
         <h1 className="text-neutral-100 font-extrabold text-6xl md:text-8xl pt-0 py-4 lg:py-10">
@@ -30,7 +30,7 @@ export default function CTA() {
             target="_blank"
             className="flex items-center gap-2 bg-neutral-900 hover:bg-neutral-800 rounded-lg py-2 px-2.5 md:px-4 font-semibold"
           >
-            <FaGithub className="text-base md:text-lg text-[--primaryColorDark] " />
+            <FaGithub className="text-base md:text-lg text-primary " />
             GitHub
           </a>
           <a
@@ -38,14 +38,14 @@ export default function CTA() {
             target="_blank"
             className="flex items-center gap-2 bg-neutral-900 hover:bg-neutral-800 rounded-lg py-2 px-2.5 md:px-4 font-semibold"
           >
-            <PiReadCvLogoFill className="text-base md:text-xl text-[--primaryColorDark] " />
+            <PiReadCvLogoFill className="text-base md:text-xl text-primary " />
             Mon CV
           </a>
           <a
             href="mailto:benjamin.aubron@outlook.com"
             className="flex items-center gap-2 bg-neutral-900 hover:bg-neutral-800 rounded-lg py-2 px-2.5 md:px-4 font-semibold"
           >
-            <MdEmail className="text-base md:text-xl text-[--primaryColorDark] " />
+            <MdEmail className="text-base md:text-xl text-primary " />
             Email
           </a>
         </div>

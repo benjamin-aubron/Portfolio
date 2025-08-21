@@ -444,7 +444,7 @@ export default function SkillsTabs() {
             Logistique
           </h4>
           <ul className="text-lg text-neutral-200 space-y-2">
-            <li className="flex items-center space-x-2 px-3 py-1 bg-neutral-900 md:hover:text-[--secondaryColor] md:border-[1px] border-neutral-900 hover:border-[--tertiaryColor] rounded-lg">
+            <li className="flex items-center space-x-2 px-3 py-1 bg-neutral-900 md:hover:text-secondary md:border-[1px] border-neutral-900 hover:border-tertiary rounded-lg">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width={24}
@@ -470,7 +470,7 @@ export default function SkillsTabs() {
               </svg>
               <span>Ordonnancement</span>
             </li>
-            <li className="flex items-center space-x-2 px-3 py-1 bg-neutral-900 md:hover:text-[--secondaryColor] md:border-[1px] border-neutral-900 hover:border-[--tertiaryColor] rounded-lg">
+            <li className="flex items-center space-x-2 px-3 py-1 bg-neutral-900 md:hover:text-secondary md:border-[1px] border-neutral-900 hover:border-tertiary rounded-lg">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width={24}
@@ -484,7 +484,7 @@ export default function SkillsTabs() {
               </svg>
               <span>Gestion de stock</span>
             </li>
-            <li className="flex items-center space-x-2 px-3 py-1 bg-neutral-900 md:hover:text-[--secondaryColor] md:border-[1px] border-neutral-900 hover:border-[--tertiaryColor] rounded-lg">
+            <li className="flex items-center space-x-2 px-3 py-1 bg-neutral-900 md:hover:text-secondary md:border-[1px] border-neutral-900 hover:border-tertiary rounded-lg">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width={24}
@@ -620,7 +620,7 @@ export default function SkillsTabs() {
             Autres
           </h4>
           <ul className="text-lg text-neutral-200 space-y-2">
-            <li className="flex items-center space-x-2 px-3 py-1 bg-neutral-900 md:hover:text-[--secondaryColor] md:border-[1px] border-neutral-900 hover:border-[--tertiaryColor] rounded-lg">
+            <li className="flex items-center space-x-2 px-3 py-1 bg-neutral-900 md:hover:text-secondary md:border-[1px] border-neutral-900 hover:border-tertiary rounded-lg">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width={24}
@@ -634,7 +634,7 @@ export default function SkillsTabs() {
               </svg>
               <span>Parler en public</span>
             </li>
-            <li className="flex items-center space-x-2 px-3 py-1 bg-neutral-900 md:hover:text-[--secondaryColor] md:border-[1px] border-neutral-900 hover:border-[--tertiaryColor] rounded-lg">
+            <li className="flex items-center space-x-2 px-3 py-1 bg-neutral-900 md:hover:text-secondary md:border-[1px] border-neutral-900 hover:border-tertiary rounded-lg">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width={24}
@@ -674,7 +674,7 @@ export default function SkillsTabs() {
               </svg>
               <span>Figma</span>
             </li>
-            <li className="flex items-center space-x-2 px-3 py-1 bg-neutral-900 md:hover:text-[--secondaryColor] md:border-[1px] border-neutral-900 hover:border-[--tertiaryColor] rounded-lg">
+            <li className="flex items-center space-x-2 px-3 py-1 bg-neutral-900 md:hover:text-secondary md:border-[1px] border-neutral-900 hover:border-tertiary rounded-lg">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width={24}
@@ -695,7 +695,7 @@ export default function SkillsTabs() {
             Langues
           </h4>
           <ul className="text-lg text-neutral-200 space-y-2">
-            <li className="flex items-center space-x-2 px-3 py-1 bg-neutral-900 md:hover:text-[--secondaryColor] md:border-[1px] border-neutral-900 hover:border-[--tertiaryColor] rounded-lg">
+            <li className="flex items-center space-x-2 px-3 py-1 bg-neutral-900 md:hover:text-secondary md:border-[1px] border-neutral-900 hover:border-tertiary rounded-lg">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width={24}
@@ -717,7 +717,7 @@ export default function SkillsTabs() {
                 <span className="text-neutral-400 ml-1">langue maternelle</span>
               </span>
             </li>
-            <li className="flex items-center space-x-2 px-3 py-1 bg-neutral-900 md:hover:text-[--secondaryColor] md:border-[1px] border-neutral-900 hover:border-[--tertiaryColor] rounded-lg">
+            <li className="flex items-center space-x-2 px-3 py-1 bg-neutral-900 md:hover:text-secondary md:border-[1px] border-neutral-900 hover:border-tertiary rounded-lg">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width={24}
@@ -748,7 +748,7 @@ export default function SkillsTabs() {
                 </span>
               </span>
             </li>
-            <li className="flex items-center space-x-2 px-3 py-1 bg-neutral-900 md:hover:text-[--secondaryColor] md:border-[1px] border-neutral-900 hover:border-[--tertiaryColor] rounded-lg">
+            <li className="flex items-center space-x-2 px-3 py-1 bg-neutral-900 md:hover:text-secondary md:border-[1px] border-neutral-900 hover:border-tertiary rounded-lg">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width={24}
