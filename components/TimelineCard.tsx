@@ -2,10 +2,7 @@ import { Experience } from "@/lib/types";
 import { IoIosRocket } from "react-icons/io";
 import { PiStudentFill } from "react-icons/pi";
 import { MdWork } from "react-icons/md";
-import {
-  AccordionContent,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { AccordionContent, AccordionTrigger } from "@/components/ui/accordion";
 
 type PositionProps =
   | "devWebFreelance.position"
@@ -30,7 +27,7 @@ type PlaceProps =
   | "studentA2I.place"
   | "studentLCIE.place"
   | "studentIMSI.place";
-  
+
 type DurationProps =
   | "devWebFreelance.duration"
   | "devWeb.duration"
@@ -50,7 +47,7 @@ type DescriptionProps =
   | "dataScience.description"
   | "logistics.description"
   | "workshopScheduler.description"
-  | "assistant.description"
+  | "assistant.description";
 
 type SkillsProps =
   | "devWebFreelance.skills"
@@ -59,8 +56,7 @@ type SkillsProps =
   | "dataScience.skills"
   | "logistics.skills"
   | "workshopScheduler.skills"
-  | "assistant.skills"
-
+  | "assistant.skills";
 
 export default async function ExperienceCard({
   experience,
@@ -70,14 +66,14 @@ export default async function ExperienceCard({
   return (
     <div className="pb-2">
       <AccordionTrigger
-        className={` [&[data-state=open]>svg]:text-[--primaryColor] ${
+        className={` [&[data-state=open]>svg]:text-primary ${
           experience.description
-            ? `[&[data-state=open]>div>div:first-child]:bg-[--primaryColor]`
+            ? `[&[data-state=open]>div>div:first-child]:bg-primary`
             : "[&>svg]:invisible cursor-default"
         }`}
       >
         <div className="flex items-center justify-start w-full">
-          <div className="flex flex-0 items-center justify-center w-8 h-8 md:w-12 md:h-12 rounded-md bg-neutral-500">
+          <div className="flex items-center justify-center w-8 h-8 md:w-12 md:h-12 rounded-md bg-neutral-500 flex-shrink-0">
             {experience.activity === "job" && (
               <MdWork className="text-xl md:text-2xl text-black" />
             )}
@@ -88,17 +84,26 @@ export default async function ExperienceCard({
               <PiStudentFill className="text-xl md:text-2xl text-black" />
             )}
           </div>
-          <div className="flex flex-1 justify-between ml-3 text-neutral-200 text-sm md:text-xl">
+          <div className="flex flex-col md:flex-row md:flex-1 md:justify-between ml-3 text-neutral-200 text-sm md:text-xl">
             <div>
               <div>{experience.position as PositionProps}</div>
-              <div className="text-neutral-500 font-light">
+              <div className="flex text-neutral-500 font-light">
+                <div
+                  className={`flex text-right mr-1 font-normal text-neutral-500`}
+                >
+                  <div>
+                    {experience.startDate}
+                    {experience.endDate && "-"}
+                    {experience.endDate},
+                  </div>
+                </div>
                 {experience.entity}
                 {experience.entity && ", "}
                 {experience.place as PlaceProps}
               </div>
             </div>
             <div
-              className={`flex flex-col text-right mr-2 md:mr-6 font-normal text-neutral-500`}
+              className={`hidden md:flex md:flex-col text-right mr-2 md:mr-6 font-normal text-neutral-500`}
             >
               <div>
                 {experience.startDate}

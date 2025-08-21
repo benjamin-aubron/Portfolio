@@ -44,7 +44,7 @@ export const experiences: Experience[] = [
     skills: "Python, R, Machine-learning, Deep-learning, Keras, Tensorflow, Scikit-learn",
   },
   {
-    entity: "Manufacture Cartier",
+    entity: "Cartier",
     position: "Chargé de missions logistiques",
     place: "Fribourg, Suisse",	
     activity: "job",
@@ -55,7 +55,7 @@ export const experiences: Experience[] = [
     skills: "Gestion de stocks, KPI, PM Office, Production, Logistique",
   },
   {
-    entity: "Manufacture Cartier",
+    entity: "Cartier",
     position: "Ordonnanceur",
     place: "Fribourg, Suisse",	
     activity: "job",
