@@ -5,6 +5,7 @@ import {
   SheetTitle,
   SheetTrigger,
   SheetClose,
+  SheetFooter,
 } from "@/components/ui/sheet";
 import LanguageSwitch from "@/components/LanguageSwitch";
 
@@ -43,12 +44,12 @@ export default function NavBar() {
       </div>
       <div className="flex md:hidden text-4xl">
         <Sheet>
-          <SheetTrigger>
+          <SheetTrigger className="cursor-pointer">
             <LuAlignJustify />
           </SheetTrigger>
           <SheetContent>
             <SheetTitle></SheetTitle>
-            <div className="flex flex-col gap-1 justify-start text-xl text-neutral-200">
+            <div className="flex flex-col gap-1 justify-start text-xl text-neutral-200 pt-10">
               <SheetClose>
                 <a
                   href="#project"
@@ -89,7 +90,9 @@ export default function NavBar() {
                   A propos
                 </a>
               </SheetClose>
-              <LanguageSwitch />
+              <SheetFooter className="absolute bottom-6 right-6">
+                <LanguageSwitch />
+              </SheetFooter>
             </div>
           </SheetContent>
         </Sheet>
