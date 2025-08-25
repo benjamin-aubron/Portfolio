@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/sheet";
 import LanguageSwitch from "@/components/LanguageSwitch";
 
-export default function Nav() {
+export default function NavBar() {
   return (
     <div className="fixed z-20 left-1/2 transform -translate-x-1/2 max-w-screen-xl w-full flex items-center justify-between text-white bg-black/80 backdrop-blur border-b-[1px] border-[#1E2029] py-6 px-4">
       <a href="#home" className="flex text-4xl font-semibold">

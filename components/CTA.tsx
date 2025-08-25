@@ -17,7 +17,7 @@ export default function CTA() {
         </h1>
         <h2 className="text-neutral-500 text-2xl md:text-5xl font-semibold max-w-screen-lg py-4 lg:py-6">
           <span className="text-neutral-100">
-            Développeur Front-end avec Next.js
+            Développeur FullStack avec Next.js
           </span>
           . A la recherche de nouveaux challenges.
         </h2>

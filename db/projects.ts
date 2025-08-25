@@ -6,7 +6,7 @@ export const projects: Project[] = [
     src:"alaskaPete.png",
     description: "Création d'un site d'un restaurant permettant de présenter les menus, passer des commandes, réserver une table et gérer les paiements.",
     date: "Février 2025",
-    techs: ["Next.js", "TailwindCSS", "TypeScript","BetterAuth", "Stripe", "React-toastify", "Prisma"],
+    techs: ["Next.js", "TailwindCSS", "TypeScript","BetterAuth", "Stripe", "Prisma"],
     url: "https://github.com/Benjamin-AUBRON/portfolio",
     github: "https://github.com/benjamin-aubron",
   },

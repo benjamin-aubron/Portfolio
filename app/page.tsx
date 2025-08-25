@@ -1,4 +1,4 @@
-import Nav from "@/components/Nav";
+import Nav from "@/components/NavBar";
 import CTA from "@/components/CTA";
 import SkillsSection from "@/components/SkillsSection";
 import ProjectSection from "@/components/ProjectSection";
