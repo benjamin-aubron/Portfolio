@@ -1,7 +1,24 @@
-// app/[locale]/layout.tsx
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import "../globals.css";
 import { NextIntlClientProvider } from "next-intl";
 
-// Génère les pages statiques pour 'en' et 'fr'
+const geistSans = Geist({
+	variable: "--font-geist-sans",
+	subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+	variable: "--font-geist-mono",
+	subsets: ["latin"],
+});
+
+export const metadata: Metadata = {
+	title: "Benjamin AUBRON Portfolio",
+	description:
+		"Portfolio of Benjamin AUBRON, presenting his skills and projects.",
+};
+
 export function generateStaticParams() {
 	return [{ locale: "en" }, { locale: "fr" }];
 }
@@ -17,16 +34,15 @@ type Props = {
 	children: React.ReactNode;
 };
 
-export default async function LocaleLayout({
-	params,
-	children,
-}: Props) {
+export default async function LocaleLayout({ params, children }: Props) {
 	const { locale } = await params;
 	const messages = await loadMessages(locale);
 
 	return (
 		<html lang={locale}>
-			<body>
+			<body
+				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+			>
 				{/* Fournit le contexte i18n au reste de l'app */}
 				<NextIntlClientProvider locale={locale} messages={messages}>
 					{children}

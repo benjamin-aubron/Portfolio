@@ -1,14 +1,23 @@
-// app/[locale]/page.tsx
-"use client"; // si vous utilisez useTranslations côté client
-import { useTranslations } from 'next-intl';
+import Nav from "@/components/NavBar";
+import CTA from "@/components/CTA";
+import SkillsSection from "@/components/SkillsSection";
+import ProjectSection from "@/components/ProjectSection";
+import StackSection from "@/components/StackSection";
+import TimelineSection from "@/components/TimelineSection";
+import AboutSection from "@/components/AboutSection";
+import Footer from "@/components/Footer";
 
 export default function HomePage() {
-  // On suppose que 'HomePage' est une clé dans les JSON de messages
-  const t = useTranslations('HomePage');
   return (
-    <div>
-      <h1>{t('helloWorld')}</h1>
-      <p>{t('description')}</p>
-    </div>
+    <main className="bg-black overflow-hidden">
+      <Nav />
+      <CTA />
+      <ProjectSection />
+      <SkillsSection />
+      <StackSection />
+      <TimelineSection />
+      <AboutSection />
+      <Footer />
+    </main>
   );
 }

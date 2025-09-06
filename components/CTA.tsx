@@ -1,3 +1,4 @@
+"use client";
 import { MdEmail } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
 import { PiReadCvLogoFill } from "react-icons/pi";
@@ -22,12 +23,11 @@ export default function CTA() {
         <h2 className="text-neutral-500 text-2xl md:text-5xl font-semibold max-w-screen-lg py-4 lg:py-6">
           <span className="text-neutral-100">
             {t("subtitle")}
-            Développeur FullStack avec Next.js
           </span>
-          . A la recherche de nouveaux challenges.
+          . {t("description")}
         </h2>
         <div className="text-neutral-400 text-lg md:text-3xl font-medium py-12">
-          👩🏻‍💻 Me perfectionnant actuellement en Frontend (React / Next)
+          👩🏻‍💻 {t("currently")}
         </div>
         <div className="flex flex-wrap items-center justify-start gap-3 md:gap-6 text-neutral-100 text-lg md:text-xl pt-4">
           <a
@@ -44,7 +44,7 @@ export default function CTA() {
             className="flex items-center gap-2 bg-neutral-900 hover:bg-neutral-800 rounded-lg py-2 px-2.5 md:px-4 font-semibold"
           >
             <PiReadCvLogoFill className="text-base md:text-xl text-primary " />
-            Mon CV
+            {t("cv")}
           </a>
           <a
             href="mailto:benjamin.aubron@outlook.com"
