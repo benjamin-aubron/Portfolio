@@ -1,0 +1,150 @@
+{
+  "nav": {
+    "project":"Projects",
+    "skills":"Skills",
+    "stack":"Favorite Stack",
+    "timeline":"Timeline",
+    "about":"About"
+  },
+  "cta": {
+    "title":"Hey 👋 ! I am",
+    "subtitle":"Front-end Developer with Next.js",
+    "description":"Looking for new challenges.",
+    "currently": "Currently improving my Frontend skills (React / Next)",
+    "cv":"My Resume"
+  },
+  "project":{
+    "title":"My latest projects",
+    "alaska":{
+      "name":"Alaska Pete's Roadhouse Grille",
+      "description":"Creating a restaurant website that allows presenting menus, placing orders, booking tables and handling payments.",
+      "date":"February 2025"
+    },
+    "amicale":{
+      "name":"Lyon Blood Donation Association",
+      "description":"This site, created with Docusaurus, aims to present the association, its operation (via documentation) and its activity (via the blog).",
+      "date":"December 2024 → Today"
+    },
+    "cryptogalaxy":{
+      "name":"TheCryptoGalaxy",
+      "description":"TheCryptoGalaxy is a site bringing together in one place the best tools and Dapps from the most developed blockchain ecosystems.",
+      "date":"2023 → Today"
+    }
+  },
+  "skills":{
+    "title":"My skills",
+    "engineering":"Engineering",
+    "other":"Others",
+    "logistic":"Logistics",
+    "language":"Languages",
+    "R":"R - Statistical testing",
+    "workshopScheduling":"Workshop scheduling",
+    "stockManagement":"Stock management",
+    "projectManagement":"Project management",
+    "speach":"Public speaking",
+    "uiux":"UI/UX basics",
+    "french":"French",
+    "english":"English",
+    "chinese":"Chinese",
+    "languageLevel3":"native language",
+    "languageLevel2":"professional proficiency",
+    "languageLevel1":"basic notions"
+  },
+  "stack":{
+    "title":"My favorite stack",
+    "next":"Modern React framework, Next offers me optimized performance and fast rendering thanks to server-side rendering (SSR) and static site generation (SSG). Moreover, Next allows me to create fullstack applications.",
+    "tailwind":"For styling, Tailwind offers an excellent compromise between simplicity, speed and performance",
+    "typescript":"Thanks to TypeScript I create robust code, while making maintenance easier for me.",
+    "auth":"Flexible and easy to integrate, the combination of BetterAuth and Prisma allows me to easily manage authentication and database access."
+  },
+  "timeline":{
+    "title":"Timeline",
+    "devWebFreelance":{
+      "position":"Freelance Web Developer",
+      "place": "Lyon, France",
+      "duration": "1 year",
+      "description": "Lorem Ipsum",
+      "skills": "React, Next, PostgreSQL, Prisma, Docusaurus"
+    },
+    "devWeb":{
+      "position":"Web Developer",
+      "place": "Lyon, France",
+      "duration": "1 year",
+      "description": "Self-taught web development training, using React and especially the Next.js framework. Creating websites and web applications. Authentication and database management.",
+      "skills": "React, Next, PostgreSQL, Prisma, Docusaurus"
+    },
+    "entrepreneurship":{
+      "position":"Entrepreneurial Project",
+      "place": "Lyon, France",
+      "duration": "2 years",
+      "description": "Development of a platform for public accounts transparency with the goal of making data on proper use of public money accessible to taxpayers.",
+      "skills": "Web3, Blockchain, Public Finance"
+    },
+    "dataScience":{
+      "position":"Data Science Training",
+      "place": "Chambéry, France",
+      "duration": "1 year",
+      "description": "HarvardX \"Data Science with R\" degree program. Data Science with Python in machine learning and deep learning (Keras and TensorFlow). Creation of digital asset trading software with leverage and AI-optimized strategies. Portfolio optimization according to Markowitz concepts.",
+      "skills": "Python, R, Machine-learning, Deep-learning, Keras, Tensorflow, Scikit-learn"
+    },
+    "logistics":{
+      "position":"Logistics Mission Manager",
+      "place": "Fribourg, Switzerland",
+      "duration": "1 year",
+      "description": "Redesigning Gold line production flows, pull vs push flow, stock management, production organization and efficiency monitoring. Creating indicators for production management. Responsibility for the manufacture's project portfolio.",
+      "skills": "Stock management, KPI, PM Office, Production, Logistics"
+    },
+    "workshopScheduler":{
+      "position":"Workshop Scheduler",
+      "place": "Fribourg, Switzerland",
+      "duration": "1 year",
+      "description": "Scheduling machining, polishing and assembly trades for the Gold line of the manufacture. Managing semi-finished product stocks to ensure watch production. Creating KPIs to ensure tracking of launch quantities on new products.",
+      "skills": "Scheduling, Stock management, KPI, SAP-APO, Production"
+    },
+    "assistant":{
+      "position":"Assistant Project Manager Internship",
+      "place": "Paris, France",
+      "duration": "6 months",
+      "description": "Calculating lead times and simulating transportation costs between France and Asia Pacific customers, including customs costs based on products (CITES standards).",
+      "skills": "Project management, 5S, VBA, SAP, customs regulations for luxury products"
+    },
+    "studentA2I":{
+      "position":"Master in International Industrial Affairs (A2i)",
+      "place": "Belfort, France",
+      "duration": "1 year"
+    },
+    "studentLCIE":{
+      "position":"University Degree in Innovation and Entrepreneurship",
+      "place": "Shanghai, China",
+      "duration": "6 months"
+    },
+    "studentIMSI":{
+      "position":"Engineering Degree in Industrial Logistics",
+      "place": "Belfort, France",
+      "duration": "4 years"
+    }
+  },
+  "about":{
+    "title" : "About",
+    "about1":"Front-end developer, I master the Framework",
+    "about2":"I seek to put my technical skills and creativity at the service of innovative projects. Moreover, I closely follow the paradigm shifts around",
+    "about3":"blockchain and web 3.0",
+    "about4":"technologies. I also participate in open source projects such as the",
+    "about5":"I am a curious person eager to understand the complexity of our world. I am interested in different fields such as",
+    "about6":"geopolitics",
+    "about7":"economics and finance",
+    "about7a":"as well as",
+    "about8":"sociology.",
+    "about9":"In my free time, I like to discover",
+    "about10":"world cuisine",
+    "about11":", play",
+    "about12":"and I am treasurer in an association for the promotion of",
+    "about13":"Blood Donation"
+  },
+  "footer":{
+    "contact":"Contact me.",
+    "job":"Front-end Developer with",
+    "need":"Feel free to contact me to discuss your project or your needs.",
+    "cv":"My Resume"
+  }
+}
