@@ -1,8 +1,11 @@
 import { MdEmail } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
 import { PiReadCvLogoFill } from "react-icons/pi";
+import { useTranslations } from "next-intl";
 
 export default function CTA() {
+
+  const t = useTranslations("HomePage");
   return (
     <div
       id="home"
@@ -15,6 +18,7 @@ export default function CTA() {
         <h1 className="text-neutral-100 font-extrabold text-6xl md:text-8xl pt-0 py-4 lg:py-10">
           Benjamin AUBRON
         </h1>
+        <h2 className="text-2xl text-white">{t("title")}</h2>
         <h2 className="text-neutral-500 text-2xl md:text-5xl font-semibold max-w-screen-lg py-4 lg:py-6">
           <span className="text-neutral-100">
             Développeur FullStack avec Next.js
