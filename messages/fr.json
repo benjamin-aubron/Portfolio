@@ -1,5 +1,10 @@
 {
-	"HomePage": {
-		"title": "Bonjour à tous!"
-	}
+    "HomePage": {
+        "helloWorld": "Bonjour le monde !",
+        "description": "Ceci est un site web statique entièrement traduit"
+    },
+    "Header": {
+        "home": "Home",
+        "about": "About"
+    }
 }

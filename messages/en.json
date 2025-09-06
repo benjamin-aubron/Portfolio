@@ -1,5 +1,10 @@
 {
 	"HomePage": {
-		"title": "Hello world!"
+		"helloWorld": "Hello World !",
+		"description": "This is a fully translated static website"
+	},
+	"Header": {
+		"home": "Home",
+		"about": "About"
 	}
 }
