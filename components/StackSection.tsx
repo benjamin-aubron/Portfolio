@@ -1,10 +1,13 @@
+"use client";
 import Section from "@/components/Section";
 import StackCard from "@/components/StackCard";
 import { stack } from "@/db/stack";
+import { useTranslations } from "next-intl";
 
-export default async function StackSection() {
+export default function StackSection() {
+  const t = useTranslations("stack");
   return (
-    <Section id="stack" title="Ma stack favorite">
+    <Section id="stack" title={t("title")}>
       <div className="grid grid-cols-2 xl:grid-cols-3 gap-3 md:gap-6">
         <div className="col-span-2">
           <StackCard stack={stack[0]} />

@@ -1,12 +1,15 @@
+"use client";
 import Section from "@/components/Section";
+import { useTranslations } from "next-intl";
 
 export default function AboutSection() {
+	const t = useTranslations("about");
 	return (
-		<Section id="about" title="A propos">
+		<Section id="about" title={t('title')}>
 			<div className="flex flex-col lg:flex-row items-center justify-between gap-20 lg:gap-10">
 				<div>
 					<div className="leading-8 py-2">
-						Développeur front end, je maîtrise le Framework{" "}
+						{t('about1')}{" "}
 						<span className="py-[3px] px-2 bg-neutral-950 border border-neutral-800 rounded-md whitespace-nowrap">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -20,9 +23,7 @@ export default function AboutSection() {
 							</svg>{" "}
 							Next.JS
 						</span>
-						. Je cherche à mettre mes compétences techniques et ma créativité au
-						service de projets innovants. De plus, je suis avec attention les
-						changements de paradigmes autour des technologies{" "}
+						. {t('about2')}{" "}
 						<span className="py-[3px] px-2 bg-neutral-950 border border-neutral-800 rounded-md whitespace-nowrap">
 							<img
 								src="/web3.png"
@@ -31,10 +32,9 @@ export default function AboutSection() {
 								width={50}
 								height={50}
 							/>
-							blockchain et web 3.0
+							{t('about3')}
 						</span>
-						. Je participe également à des projets open source tels que le
-						projet{" "}
+						. {t('about4')}{" "}
 						<a
 							href="https://github.com/dataforgoodfr/13_eclaireur_public"
 							target="_blank"
@@ -45,9 +45,7 @@ export default function AboutSection() {
 						.
 					</div>
 					<div className="leading-8 py-2">
-						Je suis une personne curieuse et désireuse de comprendre la
-						complexité de notre monde. Je m&apos;intéresse à différents domaines
-						tels que la
+						{t('about5')}
 						<span className="py-[3px] px-2 bg-neutral-950 border border-neutral-800 rounded-md whitespace-nowrap">
 							<img
 								src="/geopolitique.png"
@@ -56,7 +54,7 @@ export default function AboutSection() {
 								width={50}
 								height={50}
 							/>
-							géopolitique
+							{t('about6')}
 						</span>
 						,{" "}
 						<span className="py-[3px] px-2 bg-neutral-950 border border-neutral-800 rounded-md whitespace-nowrap">
@@ -67,9 +65,9 @@ export default function AboutSection() {
 								width={50}
 								height={50}
 							/>
-							l&apos;économie et la finance
+							{t('about7')}
 						</span>{" "}
-						ainsi que la.{" "}
+						{t('about7a')}{" "}
 						<span className="py-[3px] px-2 bg-neutral-950 border border-neutral-800 rounded-md whitespace-nowrap">
 							<img
 								src="/sociologie.png"
@@ -78,11 +76,11 @@ export default function AboutSection() {
 								width={50}
 								height={50}
 							/>
-							sociologie.
+							{t('about8')}
 						</span>
 					</div>
 					<div className="leading-8 py-2">
-						Sur mon temps libre, j&apos;aime découvrir la
+						{t('about9')}
 						<span className="py-[3px] px-2 bg-neutral-950 border border-neutral-800 rounded-md whitespace-nowrap">
 							<img
 								src="/cuisine.png"
@@ -91,9 +89,9 @@ export default function AboutSection() {
 								width={50}
 								height={50}
 							/>
-							cuisine du monde
+							{t('about10')}
 						</span>
-						, jouer au
+						{t('about11')}
 						<span className="py-[3px] px-2 bg-neutral-950 border border-neutral-800 rounded-md whitespace-nowrap">
 							<img
 								src="/badminton.png"
@@ -104,7 +102,7 @@ export default function AboutSection() {
 							/>
 							badminton
 						</span>{" "}
-						et je suis trésorier dans une association pour la promotion du
+						{t('about12')}
 						<span className="py-[3px] px-2 bg-neutral-950 border border-neutral-800 rounded-md whitespace-nowrap">
 							<img
 								src="/donsang.png"
@@ -113,7 +111,7 @@ export default function AboutSection() {
 								width={25}
 								height={25}
 							/>
-							Don de Sang
+							{t('about13')}
 						</span>
 						.
 					</div>

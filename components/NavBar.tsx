@@ -1,3 +1,4 @@
+"use client";
 import { LuAlignJustify } from "react-icons/lu";
 import {
   Sheet,
@@ -8,8 +9,10 @@ import {
   SheetFooter,
 } from "@/components/ui/sheet";
 import LanguageSwitch from "@/components/LanguageSwitch";
+import { useTranslations } from "next-intl";
 
 export default function NavBar() {
+  const t = useTranslations("nav");
   return (
     <div className="fixed z-20 left-1/2 transform -translate-x-1/2 max-w-screen-xl w-full flex items-center justify-between text-white bg-black/80 backdrop-blur border-b-[1px] border-[#1E2029] py-6 px-4">
       <a href="#home" className="flex text-4xl font-semibold">
@@ -23,22 +26,22 @@ export default function NavBar() {
           href="#project"
           className="hover:bg-neutral-800 rounded-md py-2 px-4"
         >
-          Projets
+          {t("project")}
         </a>
         <a href="#skills" className="hover:bg-neutral-800 rounded-md py-2 px-4">
-          Compétences
+          {t("skills")}
         </a>
         <a href="#stack" className="hover:bg-neutral-800 rounded-md py-2 px-4">
-          Stack favorite
+          {t("stack")}
         </a>
         <a
           href="#timeline"
           className="hover:bg-neutral-800 rounded-md py-2 px-4"
         >
-          Chronologie
+          {t("timeline")}
         </a>
         <a href="#about" className="hover:bg-neutral-800 rounded-md py-2 px-4">
-          A propos
+          {t("about")}
         </a>
         <LanguageSwitch />
       </div>
@@ -55,7 +58,7 @@ export default function NavBar() {
                   href="#project"
                   className="block w-full h-full hover:bg-neutral-800 rounded-md py-2 px-4 text-left"
                 >
-                  Projets
+                  {t("project")}
                 </a>
               </SheetClose>
               <SheetClose>
@@ -63,7 +66,7 @@ export default function NavBar() {
                   href="#skills"
                   className="block w-full h-full hover:bg-neutral-800 rounded-md py-2 px-4 text-left"
                 >
-                  Compétences
+                  {t("skills")}
                 </a>
               </SheetClose>
               <SheetClose>
@@ -71,7 +74,7 @@ export default function NavBar() {
                   href="#stack"
                   className="block w-full h-full hover:bg-neutral-800 rounded-md py-2 px-4 text-left"
                 >
-                  Stack favorite
+                  {t("stack")}
                 </a>
               </SheetClose>
               <SheetClose>
@@ -79,7 +82,7 @@ export default function NavBar() {
                   href="#timeline"
                   className="block w-full h-full hover:bg-neutral-800 rounded-md py-2 px-4 text-left"
                 >
-                  Chronologie
+                  {t("timeline")}
                 </a>
               </SheetClose>
               <SheetClose>
@@ -87,7 +90,7 @@ export default function NavBar() {
                   href="#about"
                   className="block w-full h-full hover:bg-neutral-800 rounded-md py-2 px-4 text-left"
                 >
-                  A propos
+                  {t("about")}
                 </a>
               </SheetClose>
               <SheetFooter className="absolute bottom-6 right-6">
