@@ -6,60 +6,6 @@ import { MdWork } from "react-icons/md";
 import { AccordionContent, AccordionTrigger } from "@/components/ui/accordion";
 import { useTranslations } from "next-intl";
 
-// type PositionProps =
-//   | "devWebFreelance.position"
-//   | "devWeb.position"
-//   | "entrepreneurship.position"
-//   | "dataScience.position"
-//   | "logistics.position"
-//   | "workshopScheduler.position"
-//   | "assistant.position"
-//   | "studentA2I.position"
-//   | "studentLCIE.position"
-//   | "studentIMSI.position";
-
-// type PlaceProps =
-//   | "devWebFreelance.place"
-//   | "devWeb.place"
-//   | "entrepreneurship.place"
-//   | "dataScience.place"
-//   | "logistics.place"
-//   | "workshopScheduler.place"
-//   | "assistant.place"
-//   | "studentA2I.place"
-//   | "studentLCIE.place"
-//   | "studentIMSI.place";
-
-// type DurationProps =
-//   | "devWebFreelance.duration"
-//   | "devWeb.duration"
-//   | "entrepreneurship.duration"
-//   | "dataScience.duration"
-//   | "logistics.duration"
-//   | "workshopScheduler.duration"
-//   | "assistant.duration"
-//   | "studentA2I.duration"
-//   | "studentLCIE.duration"
-//   | "studentIMSI.duration";
-
-// type DescriptionProps =
-//   | "devWebFreelance.description"
-//   | "devWeb.description"
-//   | "entrepreneurship.description"
-//   | "dataScience.description"
-//   | "logistics.description"
-//   | "workshopScheduler.description"
-//   | "assistant.description";
-
-// type SkillsProps =
-//   | "devWebFreelance.skills"
-//   | "devWeb.skills"
-//   | "entrepreneurship.skills"
-//   | "dataScience.skills"
-//   | "logistics.skills"
-//   | "workshopScheduler.skills"
-//   | "assistant.skills";
-
 export default function ExperienceCard({
   experience,
 }: {

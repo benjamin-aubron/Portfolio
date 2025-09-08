@@ -16,7 +16,7 @@ export default function LanguageSwitch() {
 	const locale = useLocale();
 	const isClient = useIsClient();
 	const id = useId();
-	
+
 
 	const handleLanguageChange = (newLocale: string) => {
 		router.push(`/${newLocale}`);
@@ -31,11 +31,11 @@ export default function LanguageSwitch() {
 	}
 
 	return (
-		<Select value={locale} onValueChange={handleLanguageChange} >
+		<Select value={locale} onValueChange={handleLanguageChange}  >
 			<SelectTrigger className="flex justify-center items-center md:w-[40px] w-[160px] bg-neutral-800 md:bg-inherit cursor-pointer" id={id}>
 				<SelectValue placeholder={locale === "fr" ? "🇫🇷" : "🇬🇧"} />
 			</SelectTrigger>
-			<SelectContent>
+			<SelectContent className="bg-neutral-900 text-neutral-200 border-neutral-800 rounded-md w-[160px]">
 				<SelectItem value="fr">🇫🇷</SelectItem>
 				<SelectItem value="en">🇬🇧</SelectItem>
 			</SelectContent>
