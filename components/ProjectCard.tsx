@@ -1,8 +1,11 @@
+"use client"
 import { IoGlobeOutline } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa";
 import { Project } from "@/lib/types";
+import { useTranslations } from "next-intl";
 
-export default async function ProjectCard({ project }: { project: Project }) {
+export default function ProjectCard({ project }: { project: Project }) {
+	const t = useTranslations("project");
 	return (
 		<div className="relative bg-neutral-900 text-neutral-200 p-4 rounded-2xl group border border-neutral-900 lg:hover:border-secondary duration-300">
 			<div className="pb-2">
@@ -15,7 +18,7 @@ export default async function ProjectCard({ project }: { project: Project }) {
 				/>
 			</div>
 			<h3 className="text-xl font-semibold text-neutral-100 py-1">
-				{project.name}
+				{t("alaska.name")}
 			</h3>
 			<div className="text-neutral-300 py-3">{project.date}</div>
 			<div className="pb-1 h-32 text-neutral-40">

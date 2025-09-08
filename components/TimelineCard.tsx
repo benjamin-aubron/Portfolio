@@ -58,7 +58,7 @@ type SkillsProps =
   | "workshopScheduler.skills"
   | "assistant.skills";
 
-export default async function ExperienceCard({
+export default function ExperienceCard({
   experience,
 }: {
   experience: Experience;
