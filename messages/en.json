@@ -59,11 +59,12 @@
   },
   "timeline":{
     "title":"Timeline",
+    "skills":"Skills",
     "devWebFreelance":{
       "position":"Freelance Web Developer",
       "place": "Lyon, France",
       "duration": "1 year",
-      "description": "Lorem Ipsum",
+      "description": "Creation of websites and web applications for my clients with hosting solutions and SEO management.",
       "skills": "React, Next, PostgreSQL, Prisma, Docusaurus"
     },
     "devWeb":{
@@ -111,17 +112,23 @@
     "studentA2I":{
       "position":"Master in International Industrial Affairs (A2i)",
       "place": "Belfort, France",
-      "duration": "1 year"
+      "duration": "1 year",
+      "description": "",
+      "skills": ""
     },
     "studentLCIE":{
       "position":"University Degree in Innovation and Entrepreneurship",
       "place": "Shanghai, China",
-      "duration": "6 months"
+      "duration": "6 months",
+      "description": "",
+      "skills": ""
     },
     "studentIMSI":{
-      "position":"Engineering Degree in Industrial Logistics",
+      "position":"Master of Science in Industrial Logistics",
       "place": "Belfort, France",
-      "duration": "4 years"
+      "duration": "4 years",
+      "description": "",
+      "skills": ""
     }
   },
   "about":{

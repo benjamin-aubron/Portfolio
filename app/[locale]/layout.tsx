@@ -39,7 +39,7 @@ export default async function LocaleLayout({ params, children }: Props) {
 	const messages = await loadMessages(locale);
 
 	return (
-		<html lang={locale}>
+		<html lang={locale} className="scroll-smooth">
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
 			>

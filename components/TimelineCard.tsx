@@ -1,74 +1,77 @@
+"use client"
 import { Experience } from "@/lib/types";
 import { IoIosRocket } from "react-icons/io";
 import { PiStudentFill } from "react-icons/pi";
 import { MdWork } from "react-icons/md";
 import { AccordionContent, AccordionTrigger } from "@/components/ui/accordion";
+import { useTranslations } from "next-intl";
 
-type PositionProps =
-  | "devWebFreelance.position"
-  | "devWeb.position"
-  | "entrepreneurship.position"
-  | "dataScience.position"
-  | "logistics.position"
-  | "workshopScheduler.position"
-  | "assistant.position"
-  | "studentA2I.position"
-  | "studentLCIE.position"
-  | "studentIMSI.position";
+// type PositionProps =
+//   | "devWebFreelance.position"
+//   | "devWeb.position"
+//   | "entrepreneurship.position"
+//   | "dataScience.position"
+//   | "logistics.position"
+//   | "workshopScheduler.position"
+//   | "assistant.position"
+//   | "studentA2I.position"
+//   | "studentLCIE.position"
+//   | "studentIMSI.position";
 
-type PlaceProps =
-  | "devWebFreelance.place"
-  | "devWeb.place"
-  | "entrepreneurship.place"
-  | "dataScience.place"
-  | "logistics.place"
-  | "workshopScheduler.place"
-  | "assistant.place"
-  | "studentA2I.place"
-  | "studentLCIE.place"
-  | "studentIMSI.place";
+// type PlaceProps =
+//   | "devWebFreelance.place"
+//   | "devWeb.place"
+//   | "entrepreneurship.place"
+//   | "dataScience.place"
+//   | "logistics.place"
+//   | "workshopScheduler.place"
+//   | "assistant.place"
+//   | "studentA2I.place"
+//   | "studentLCIE.place"
+//   | "studentIMSI.place";
 
-type DurationProps =
-  | "devWebFreelance.duration"
-  | "devWeb.duration"
-  | "entrepreneurship.duration"
-  | "dataScience.duration"
-  | "logistics.duration"
-  | "workshopScheduler.duration"
-  | "assistant.duration"
-  | "studentA2I.duration"
-  | "studentLCIE.duration"
-  | "studentIMSI.duration";
+// type DurationProps =
+//   | "devWebFreelance.duration"
+//   | "devWeb.duration"
+//   | "entrepreneurship.duration"
+//   | "dataScience.duration"
+//   | "logistics.duration"
+//   | "workshopScheduler.duration"
+//   | "assistant.duration"
+//   | "studentA2I.duration"
+//   | "studentLCIE.duration"
+//   | "studentIMSI.duration";
 
-type DescriptionProps =
-  | "devWebFreelance.description"
-  | "devWeb.description"
-  | "entrepreneurship.description"
-  | "dataScience.description"
-  | "logistics.description"
-  | "workshopScheduler.description"
-  | "assistant.description";
+// type DescriptionProps =
+//   | "devWebFreelance.description"
+//   | "devWeb.description"
+//   | "entrepreneurship.description"
+//   | "dataScience.description"
+//   | "logistics.description"
+//   | "workshopScheduler.description"
+//   | "assistant.description";
 
-type SkillsProps =
-  | "devWebFreelance.skills"
-  | "devWeb.skills"
-  | "entrepreneurship.skills"
-  | "dataScience.skills"
-  | "logistics.skills"
-  | "workshopScheduler.skills"
-  | "assistant.skills";
+// type SkillsProps =
+//   | "devWebFreelance.skills"
+//   | "devWeb.skills"
+//   | "entrepreneurship.skills"
+//   | "dataScience.skills"
+//   | "logistics.skills"
+//   | "workshopScheduler.skills"
+//   | "assistant.skills";
 
 export default function ExperienceCard({
   experience,
 }: {
   experience: Experience;
 }) {
+  const t = useTranslations("timeline");
   return (
     <div className="pb-2">
-      <AccordionTrigger
+      <AccordionTrigger disabled={t(experience.description) === ""}
         className={` [&[data-state=open]>svg]:text-primary ${
-          experience.description
-            ? `[&[data-state=open]>div>div:first-child]:bg-primary`
+          t(experience.description) !== ""
+            ? `[&[data-state=open]>div>div:first-child]:bg-primary cursor-pointer`
             : "[&>svg]:invisible cursor-default"
         }`}
       >
@@ -86,7 +89,7 @@ export default function ExperienceCard({
           </div>
           <div className="flex flex-col md:flex-row md:flex-1 md:justify-between ml-3 text-neutral-200 text-sm md:text-xl">
             <div>
-              <div>{experience.position as PositionProps}</div>
+              <div>{t(experience.position)}</div>
               <div className="flex text-neutral-500 font-normal">
                 <div
                   className={`flex md:hidden text-right mr-1 text-neutral-500`}
@@ -99,7 +102,7 @@ export default function ExperienceCard({
                 </div>
                 {experience.entity}
                 {experience.entity && ", "}
-                {experience.place as PlaceProps}
+                {t(experience.place)}
               </div>
             </div>
             <div
@@ -110,7 +113,7 @@ export default function ExperienceCard({
                 {experience.endDate && " - "}
                 {experience.endDate}
               </div>
-              <div>{experience.duration as DurationProps}</div>
+              <div>{t(experience.duration)}</div>
             </div>
           </div>
         </div>
@@ -120,14 +123,14 @@ export default function ExperienceCard({
           <div className="min-w-[2px] mx-[15px] md:mx-[23px] bg-secondary self-stretch rounded"></div>
           <div className="ml-3">
             <div className="py-1 text-neutral-200 md:max-w-[80%]">
-              {experience.description as DescriptionProps}
+              {t(experience.description)}
             </div>
             <div className="flex flex-wrap py-2 items-center">
               {experience.skills && (
-                <div className="text-neutral-300 mr-1">Compétences : </div>
+                <div className="text-neutral-300 mr-1">{t("skills")} : </div>
               )}
               <span className="text-secondary">
-                {experience.skills as SkillsProps}
+                {t(experience.skills)}
               </span>
             </div>
           </div>

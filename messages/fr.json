@@ -59,11 +59,12 @@
   },
   "timeline":{
     "title":"Chronologie",
+    "skills":"Compétences",
     "devWebFreelance":{
       "position":"Développeur Web Freelance",
       "place": "Lyon, France",
       "duration": "1 an",
-      "description": "Lorem Ipsum",
+      "description": "Création de sites et d’applications web pour mes clients avec solutions d’hébergement et de gestion du SEO.",
       "skills": "React, Next, PostgreSQL, Prisma, Docusaurus"
     },
     "devWeb":{
@@ -111,17 +112,23 @@
     "studentA2I":{
       "position":"Master Affaires Industrielles Internationales (A2i)",
       "place": "Belfort, France",
-      "duration": "1 an"
+      "duration": "1 an",
+      "description": "",  
+      "skills": ""
     },
     "studentLCIE":{
       "position":"Diplôme universitaire sur l'innovation et l'entrepreneuriat",
       "place": "Shanghai, Chine",
-      "duration": "6 mois"
+      "duration": "6 mois",
+      "description": "",
+      "skills": ""
     },
     "studentIMSI":{
       "position":"Diplôme d'ingénieur en Logistique industrielle",
       "place": "Belfort, France",
-      "duration": "4 ans"
+      "duration": "4 ans",
+      "description": "",
+      "skills": ""
     }
   },
   "about":{
