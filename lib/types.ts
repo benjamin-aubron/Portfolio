@@ -25,6 +25,6 @@ export type Experience = {
 
 export type Stack = {
   name: string;
-  description: string;
+  id: string;
   icon: React.ReactNode;
 }
