@@ -35,7 +35,7 @@ export default function LanguageSwitch() {
 			<SelectTrigger className="flex justify-center items-center md:w-[40px] w-[160px] bg-neutral-800 md:bg-inherit cursor-pointer" id={id}>
 				<SelectValue placeholder={locale === "fr" ? "🇫🇷" : "🇬🇧"} />
 			</SelectTrigger>
-			<SelectContent className="bg-neutral-900 text-neutral-200 border-neutral-800 rounded-md w-[160px]">
+			<SelectContent className="bg-neutral-900 text-neutral-200 border-neutral-800 rounded-md w-[160px] md:w-[60px]">
 				<SelectItem value="fr">🇫🇷</SelectItem>
 				<SelectItem value="en">🇬🇧</SelectItem>
 			</SelectContent>

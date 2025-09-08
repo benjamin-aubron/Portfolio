@@ -28,7 +28,7 @@ export default function Footer() {
           GitHub
         </a>
         <a
-          href="resume.pdf"
+          href="/resume.pdf"
           target="_blank"
           className="flex items-center gap-2 bg-neutral-900 hover:bg-neutral-800 rounded-lg py-2 px-2.5 md:px-4 font-semibold"
         >
