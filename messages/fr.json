@@ -15,17 +15,17 @@
   },
   "project":{
     "title":"Mes derniers projets",
-    "alaska":{
+    "alaskaPete":{
       "name":"Alaska Pete's Roadhouse Grille",
       "description":"Création d'un site d'un restaurant permettant de présenter les menus, passer des commandes, réserver une table et gérer les paiements.",
       "date":"Février 2025"
     },
-    "amicale":{
+    "adsl":{
       "name":"Amicale du Don du Sang de Lyon",
       "description":"Ce site, créé avec Docusaurus a pour objectif de présenter l'association, son fonctionnement (via la documentation) et son activité (via le blog).",
       "date":"Décembre 2024 → Aujourd'hui"
     },
-    "cryptogalaxy":{
+    "theCryptoGalaxy":{
       "name":"TheCryptoGalaxy",
       "description":"TheCryptoGalaxy est un site rassemblant à un seul endroit les meilleurs outils et Dapp des écosystèmes blockchain les plus développés.",
       "date":"2023 → Aujourd'hui"

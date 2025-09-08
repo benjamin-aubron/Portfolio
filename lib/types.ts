@@ -2,6 +2,7 @@ import React from "react";
 
 
 export type Project = {
+  id:string;
   name: string;
   src:string;
   description: string;
