@@ -17,6 +17,7 @@ export const metadata: Metadata = {
 	title: "Benjamin AUBRON Portfolio",
 	description:
 		"Portfolio of Benjamin AUBRON, presenting his skills and projects.",
+	authors: { name: 'Benjamin AUBRON' }
 };
 
 export function generateStaticParams() {
