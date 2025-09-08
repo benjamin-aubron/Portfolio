@@ -1,42 +1,40 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 export default function SkillsTabs() {
 	const [engineeringSkills, setEngineeringSkills] = useState(true);
+	const t = useTranslations("skills");
 
 	return (
 		<div
-			className={`md:max-h-[300px] ${
-				engineeringSkills ? "max-h-[800px]" : "max-h-[300px]"
-			}`}
+			className={`md:max-h-[300px] ${engineeringSkills ? "max-h-[800px]" : "max-h-[300px]"
+				}`}
 		>
 			<div className="flex gap-2">
 				<div
-					className={`hover:bg-neutral-800 py-1 px-4 rounded text-lg cursor-pointer ${
-						engineeringSkills && "bg-neutral-900"
-					}`}
+					className={`hover:bg-neutral-800 py-1 px-4 rounded text-lg cursor-pointer ${engineeringSkills && "bg-neutral-900"
+						}`}
 					onClick={() => setEngineeringSkills(true)}
 				>
-					Ingénierie
+					{t("engineering")}
 				</div>
 				<div className="w-[1px] bg-neutral-800 rounded"></div>
 				<div
-					className={`hover:bg-neutral-800 py-1 px-4 rounded text-lg cursor-pointer ${
-						!engineeringSkills && "bg-neutral-900"
-					}`}
+					className={`hover:bg-neutral-800 py-1 px-4 rounded text-lg cursor-pointer ${!engineeringSkills && "bg-neutral-900"
+						}`}
 					onClick={() => setEngineeringSkills(false)}
 				>
-					Autres
+					{t("other")}
 				</div>
 			</div>
 			<hr className="my-2" />
 			<div
-				className={`grid grid-cols-1 md:grid-cols-3 gap-4 ${
-					engineeringSkills
-						? "delay-300 duration-300 opacity-100"
-						: "duration-300 opacity-0"
-				}`}
+				className={`grid grid-cols-1 md:grid-cols-3 gap-4 ${engineeringSkills
+					? "delay-300 duration-300 opacity-100"
+					: "duration-300 opacity-0"
+					}`}
 			>
 				<div className="space-y-2">
 					<h4 className="pt-2 pb-1 text-neutral-500 font-semibold text-sm">
@@ -440,13 +438,13 @@ export default function SkillsTabs() {
 									d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7m-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4c-2.4-1.6-4.7-2.9-6.4-3.7c-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7s-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9m225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3c0 36.5-38.2 28.3-87.8 28.3m-.9 72.5H365c10.8 0 18.9 11.7 24 19.2c-16.1 1.9-33 2.8-50.6 2.9z"
 								></path>
 							</svg>
-							<span>R - Tests statistiques</span>
+							<span>{t('R')}</span>
 						</li>
 					</ul>
 				</div>
 				<div className="space-y-2">
 					<h4 className="pt-2 pb-1 text-neutral-500 font-semibold text-sm">
-						Logistique
+						{t("logistic")}
 					</h4>
 					<ul className="text-lg text-neutral-200 space-y-2">
 						<li className="flex items-center space-x-2 px-3 py-1 bg-neutral-900 md:border-[1px] border-neutral-900 rounded-lg">
@@ -473,7 +471,7 @@ export default function SkillsTabs() {
 									<path d="M14 6v8m11 9H14m20 8H14M34 6v8"></path>
 								</g>
 							</svg>
-							<span>Ordonnancement</span>
+							<span>{t("workshopScheduling")}</span>
 						</li>
 						<li className="flex items-center space-x-2 px-3 py-1 bg-neutral-900 md:border-[1px] border-neutral-900 rounded-lg">
 							<svg
@@ -487,7 +485,7 @@ export default function SkillsTabs() {
 									d="M12 6V0H4v6H0v7h16V6zm-5 6H1V7h2v1h2V7h2zM5 6V1h2v1h2V1h2v5zm10 6H9V7h2v1h2V7h2zM0 16h3v-1h10v1h3v-2H0z"
 								></path>
 							</svg>
-							<span>Gestion de stock</span>
+							<span>{t("stockManagement")}</span>
 						</li>
 						<li className="flex items-center space-x-2 px-3 py-1 bg-neutral-900 md:border-[1px] border-neutral-900 rounded-lg">
 							<svg
@@ -501,7 +499,7 @@ export default function SkillsTabs() {
 									d="M19 4h-4.18a2.988 2.988 0 0 0-5.64 0H5a2.006 2.006 0 0 0-2 2v14a2.006 2.006 0 0 0 2 2h14a2.006 2.006 0 0 0 2-2V6a2.006 2.006 0 0 0-2-2m-7 0a1 1 0 1 1-1 1a1.003 1.003 0 0 1 1-1m-2 5l2.79 2.794l2.52-2.52L14 8h4v4l-1.276-1.311l-3.932 3.935L10 11.83l-2.586 2.584L6 13Zm9 10H5v-2h14Z"
 								></path>
 							</svg>
-							<span>Gestion de projet</span>
+							<span>{t("projectManagement")}</span>
 						</li>
 						<li className="flex items-center space-x-2 px-3 py-1 bg-neutral-900 md:border-[1px] border-neutral-900 rounded-lg">
 							<svg
@@ -614,15 +612,14 @@ export default function SkillsTabs() {
 				</div>
 			</div>
 			<div
-				className={`relative -top-[780px] md:-top-[252px] grid grid-cols-1 md:grid-cols-2 gap-4  ${
-					engineeringSkills
-						? "duration-300 opacity-0 -z-10"
-						: "delay-300 duration-300 opacity-100 z-10"
-				}`}
+				className={`relative -top-[780px] md:-top-[252px] grid grid-cols-1 md:grid-cols-2 gap-4  ${engineeringSkills
+					? "duration-300 opacity-0 -z-10"
+					: "delay-300 duration-300 opacity-100 z-10"
+					}`}
 			>
 				<div className="space-y-2">
 					<h4 className="pt-2 pb-1 text-neutral-500 font-semibold text-sm">
-						Autres
+						{t("other")}
 					</h4>
 					<ul className="text-lg text-neutral-200 space-y-2">
 						<li className="flex items-center space-x-2 px-3 py-1 bg-neutral-900 md:border-[1px] border-neutral-900 rounded-lg">
@@ -637,7 +634,7 @@ export default function SkillsTabs() {
 									d="M256 33c-20.835 0-39 20.24-39 47s18.165 47 39 47s39-20.24 39-47s-18.165-47-39-47M110.258 54.934l-16.99 8.496c14.917 22.147 32.213 47.013 49.76 68.947c19.707 24.634 39.95 45.048 52.997 51.572l4.975 2.488v39.478c27.13 3.608 46.516 4.982 67.875 4.09c-.66-.49-1.316-.98-1.95-1.48c-4.915-3.88-9.18-8.206-12.5-12.856c-5.87-.587-10.577-4.374-13.392-8.65c-3.063-4.65-4.57-10.242-4.57-16.262s1.507-11.612 4.57-16.264c3.064-4.65 8.364-8.736 14.967-8.736s11.903 4.085 14.967 8.736s4.57 10.244 4.57 16.264s-1.507 11.612-4.57 16.263c-.06.094-.13.185-.192.277c1.92 2.358 4.335 4.758 7.303 7.1c6.283 4.962 14.722 9.46 24.75 12.66c2.65-.324 5.366-.67 8.172-1.04v-39.58l4.975-2.488c13.048-6.525 33.29-26.94 52.998-51.573c17.546-21.934 34.842-46.8 49.76-68.947l-16.99-8.496C355.066 101.422 307.792 145 256 145s-99.067-43.578-145.742-90.066m29.094 179.93l12.152 60.763c101.057 9.362 107.935 9.362 208.992 0l12.147-60.734c-110.08 17.448-123.22 17.163-233.29-.03zm39.244 81.335l13.35 106.8h128.11l13.348-106.8c-67.76 6.032-87.047 6.032-154.808 0M137 441v20h238v-20zM16 478v18h480v-18z"
 								></path>
 							</svg>
-							<span>Parler en public</span>
+							<span>{t('speach')}</span>
 						</li>
 						<li className="flex items-center space-x-2 px-3 py-1 bg-neutral-900 md:border-[1px] border-neutral-900 rounded-lg">
 							<svg
@@ -691,13 +688,13 @@ export default function SkillsTabs() {
 									d="M7.75 2.977a1 1 0 0 0-1.638-.747C4.393 3.657 3.35 4.837 2.744 5.94C2.12 7.077 2.001 8.064 2.001 9a4 4 0 0 0 8 0c0-1.28-.626-2.23-1.116-2.974l-.144-.22c-.52-.806-.962-1.59-.99-2.829m-5.749 14.03c0-1.116.088-2.528.584-3.696A5.48 5.48 0 0 0 6.001 14.5c1.292 0 2.48-.446 3.418-1.191c.495 1.17.582 2.582.582 3.697c0 1.844-.288 4.908-.815 7.523c-.263 1.303-.595 2.55-1.006 3.494c-.203.468-.45.919-.76 1.269c-.304.344-.777.708-1.416.708c-.64 0-1.113-.364-1.417-.708c-.309-.35-.556-.8-.76-1.269c-.411-.943-.745-2.19-1.008-3.494c-.528-2.614-.818-5.679-.818-7.523M10.986 6.68A7 7 0 0 1 20.929 12H17.5a4.5 4.5 0 0 0-4.5 4.5v3.43a7 7 0 0 1-1.613-.434a49 49 0 0 1-.209 2.053a9 9 0 0 0 1.822.396V24.5a4.5 4.5 0 0 0 4.5 4.5h8a4.5 4.5 0 0 0 4.5-4.5v-8a4.5 4.5 0 0 0-4.5-4.5h-2.555A9 9 0 0 0 9.973 4.95l.027.042l.136.205c.236.353.57.855.85 1.483M25.5 14a2.5 2.5 0 0 1 2.5 2.5v8a2.5 2.5 0 0 1-2.5 2.5h-8a2.5 2.5 0 0 1-2.5-2.5v-2.555A9.004 9.004 0 0 0 22.945 14zM15 19.93V16.5a2.5 2.5 0 0 1 2.5-2.5h3.43A7 7 0 0 1 15 19.93"
 								></path>
 							</svg>
-							<span>Notion d&apos;UI/UX</span>
+							<span>{t('uiux')}</span>
 						</li>
 					</ul>
 				</div>
 				<div className="space-y-2">
 					<h4 className="pt-2 pb-1 text-neutral-500 font-semibold text-sm">
-						Langues
+						{t("language")}
 					</h4>
 					<ul className="text-lg text-neutral-200 space-y-2">
 						<li className="flex items-center space-x-2 px-3 py-1 bg-neutral-900 md:border-[1px] border-neutral-900 rounded-lg">
@@ -718,8 +715,8 @@ export default function SkillsTabs() {
 								<path fill="#eee" d="M12 5h12v26H12z"></path>
 							</svg>
 							<span>
-								Français -{" "}
-								<span className="text-neutral-400 ml-1">langue maternelle</span>
+								{t("french")} -{" "}
+								<span className="text-neutral-400 ml-1">{t("languageLevel3")}</span>
 							</span>
 						</li>
 						<li className="flex items-center space-x-2 px-3 py-1 bg-neutral-900 md:border-[1px] border-neutral-900 rounded-lg">
@@ -747,9 +744,9 @@ export default function SkillsTabs() {
 								></path>
 							</svg>
 							<span>
-								Anglais -{" "}
+								{t("english")} -{" "}
 								<span className="text-neutral-400 ml-1">
-									compétences professionnelles
+									{t("languageLevel2")}
 								</span>
 							</span>
 						</li>
@@ -770,7 +767,7 @@ export default function SkillsTabs() {
 								></path>
 							</svg>
 							<span>
-								Chinois - <span className="text-neutral-400 ml-1">notions</span>
+								{t("chinese")} - <span className="text-neutral-400 ml-1">{t("languageLevel1")}</span>
 							</span>
 						</li>
 					</ul>
