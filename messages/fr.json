@@ -8,9 +8,9 @@
   },
   "cta": {
     "title":"Hey 👋 ! Je suis",
-    "subtitle":"Développeur Front-end avec Next.js",
+    "subtitle":"Développeur Fullstack avec Next.js",
     "description":"A la recherche de nouveaux challenges.",
-    "currently": "Me perfectionnant actuellement en Frontend (React / Next)",
+    "currently": "Me perfectionnant actuellement en backend (Prisma / PostgreSQL)",
     "cv":"Mon CV"
   },
   "project":{
@@ -133,7 +133,7 @@
   },
   "about":{
     "title" : "A propos",
-    "about1":"Développeur front end, je maîtrise le Framework",
+    "about1":"Développeur fullstack, je maîtrise le Framework",
     "about2":"Je cherche à mettre mes compétences techniques et ma créativité au service de projets innovants. De plus, je suis avec attention les changements de paradigmes autour des technologies",
     "about3":"blockchain et web 3.0",
     "about4":"Je participe également  à des projets open source tels que le projet",
@@ -150,7 +150,7 @@
   },
   "footer":{
     "contact":"Me contacter.",
-    "job":"Développeur Front-end avec",
+    "job":"Développeur Fullstack avec",
     "need":"N'hésitez pas à me contacter pour discuter de votre projet ou de vos besoins.",
     "cv":"Mon CV"
   }
